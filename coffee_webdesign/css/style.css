@@ -635,6 +635,58 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Newsletter Section */
+
+.newsletter .logo-icon,
+.newsletter .logo-text,
+.newsletter .section-description {
+    color: var(--text-color);
+}
+
+.newsletter .newsletter-container {
+    display: grid;
+    justify-items: center;
+    row-gap: 4rem;
+}
+
+.newsletter .logo-icon {
+    font-size: 3rem;
+    color: var(--text-color-light);
+}
+
+.newsletter .logo-text {
+    color: var(--text-color-light);
+    font-size: 2rem;
+    font-weight: var(--font-medium);
+}
+
+.newsletter .newsletter-inputBox {
+    position: relative;
+    height: 5rem;
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.newsletter .newsletter-input {
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 0 16rem 0 2rem;
+}
+
+.newsletter .newsletter-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.newsletter .media-icons {
+    display: flex;
+}
+
 /* nav responsive */
 @media screen and (max-width: 768px) {
     .contact-content {
