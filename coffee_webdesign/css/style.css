@@ -687,6 +687,118 @@ img {
     display: flex;
 }
 
+/* Footer Section */
+
+.footer {
+    padding: 4rem 2rem 3rem;
+    background-color: var(--section-bg);
+}
+
+.footer .content-description,
+.footer .map-icon,
+.footer .location-text {
+    color: var(--text-color-light);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.footer .footer-content {
+    display: grid;
+    row-gap: 3rem;
+}
+
+.footer .logo-text,
+.footer .logo-icon {
+    color: var(--text-color-light);
+    font-size: 2rem;
+    font-weight: var(--font-medium);
+}
+
+.footer .logo-icon {
+    font-size: 3rem;
+}
+
+.footer .content-description,
+.footer .location-text {
+    text-align: left;
+    font-size: var(--small-font);
+}
+
+.footer .map-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.footer .footer-linkContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+}
+
+.footer .footer-links {
+    display: grid;
+    row-gap: 1rem;
+    font-weight: var(--font-medium);
+    color: var(--white-color);
+}
+
+.footer .footer-links .footer-link {
+    font-size: var(--small-font);
+    color: rgba(255, 255, 255, 0.5);
+    transition: var(--tran-0-3);
+}
+
+.footer .footer-links .footer-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer-copyRight {
+    max-width: 970px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    font-size: var(--small-font);
+    border-top: 2px solid var(--text-color-light);
+}
+
+/* Scroll Up */
+
+.scrollUp-btn {
+    position: fixed;
+    bottom: -30%;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    color: var(--primary-color-hover);
+    background-color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    z-index: var(--z-overlay);
+    justify-content: center;
+    transition: var(--tran-0-3);
+}
+
+.scrollUpBtn-active {
+    bottom: 3rem;
+}
+
+#scrollUp-icon {
+    opacity: 0.9;
+    transition: var(--tran-0-3);
+}
+
+.scrollUp-btn:hover #scrollUp-icon {
+    opacity: 1;
+}
+
 /* nav responsive */
 @media screen and (max-width: 768px) {
     .contact-content {

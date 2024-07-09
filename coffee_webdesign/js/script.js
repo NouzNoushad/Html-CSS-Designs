@@ -44,13 +44,23 @@ window.addEventListener("scroll", () => {
         document.querySelector("header").classList.remove("header-active");
     }
 
+    // Scroll up button
+    const scrollUpBtn = document.querySelector(".scrollUp-btn");
+
+    if(scrollY > 250){
+        scrollUpBtn.classList.add("scrollUpBtn-active");
+    }else{
+        scrollUpBtn.classList.remove("scrollUpBtn-active");
+    }
+
     // nav link indicator
     const sections = document.querySelectorAll('section[id]');
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetHeight - 100;
+        const sectionTop = section.offsetTop - 100;
+
         let navId = document.querySelector(`.menu-content a[href='#${section.id}']`);
-        if (scrollY > sectionTop && screenY <= sectionTop + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             navId.classList.add("active-navlink");
         } else {
             navId.classList.remove("active-navlink");
