@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Custom Scroll Bar */
+
+::selection {
+    background-color: #4070f4;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4070f4;
+}
+
+/* Navbar Section */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+nav.sticky {
+    background-color: #4070f4;
+    padding: 13px 0;
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav .navbar .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+}
+
+nav.sticky .navbar .logo a {
+    color: #fff;
+}
+
+nav .navbar .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .navbar .menu li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.navbar .menu a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0e2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+    color: #4070f4;
+}
+
+nav.sticky .menu a {
+    color: #fff;
+}
+
+nav.sticky .menu a:hover {
+    color: #0e2431;
+}
+
+.navbar .media-icons a {
+    color: #4070f4;
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+nav.sticky .media-icons a {
+    color: #fff;
+}
+
+nav :is(.menu-btn, .navbar .menu .cancel-btn) {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+nav .menu-btn {
+    color: #4070f4;
+}
+
+nav.sticky .menu-btn {
+    color: #fff;
+}
+
+/* Scroll To Top Button */
+.scroll-button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background-color: #4070f4;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 1190px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 750px) {
+    nav .navbar {
+        width: 90%;
+    }
+
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: #0e2431;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        color: #fff;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    nav .navbar .menu a {
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    nav.sticky .menu a:hover {
+        color: #4070f4;
+    }
+
+    nav .navbar .media-icons {
+        display: none;
+    }
+
+    nav :is(.menu-btn, .navbar .menu .cancel-btn){
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}
