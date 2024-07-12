@@ -21,3 +21,14 @@ cancelBtn.onclick = function () {
     body.style.overflow = "auto";
     scrollBtn.style.pointerEvents = "auto";
 }
+
+// Sticky Navigation
+window.onscroll = function() {
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+        scrollBtn.style.display = "block";
+    }else{
+        nav.classList.remove("sticky");
+        scrollBtn.style.display = "none";
+    }
+}
