@@ -58,6 +58,7 @@ header .container .navbar {
 
 .navbar .nav-links {
     display: flex;
+    position: relative;
     column-gap: 30px;
 }
 
@@ -103,6 +104,17 @@ header .container .navbar {
     opacity: 1;
     width: 100%;
 }
+
+.navbar :is(.menu-btn, .nav-links .cancel-btn) {
+    display: none;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 /* Home Section */
 
@@ -175,4 +187,53 @@ header .container .navbar {
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
+}
+
+
+/* MediaQuery */
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        margin: 0 30px;
+    }
+
+    .navbar .nav-links {
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 0;
+        right: -100%;
+        color: #fff;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+        z-index: 1;
+        padding: 80px 20px 20px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .nav-links {
+        right: 0;
+    }
+
+    .navbar .nav-links a::before {
+        opacity: 0;
+    }
+
+    .navbar :is(.menu-btn, .nav-links .cancel-btn) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .home .home-content {
+        width: 480px;
+        margin: 0 30px;
+    }
+
+    .home .home-content .home-title {
+        font-size: 1.8rem;
+    }
 }
