@@ -360,13 +360,86 @@ section {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 30px 20px 30px 30px;
+    padding: 30px 20px 30px 40px;
 }
 
 .construction-content p{
     margin-top: 8px;
     font-size: 1rem;
     color: #545860;
+}
+
+/* Service Section */
+
+.services {
+    background-color: #F5F6F7;
+}
+
+.services .services-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services-items .services-item {
+    width: calc(100% / 3 - 20px);
+    background-color: #fff;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.services-item .icon {
+    position: relative;
+    font-size: 2.3rem;
+    height: 50px;
+    width: 50px;
+    align-self: flex-start;
+}
+
+.services-item .icon i{
+    color: #52565E;
+    position: relative;
+    z-index: 2;
+}
+
+.services-item .icon::before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -15px;
+    border-radius: 50%;
+    background-color: #f0f1f2;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.services-item h3 {
+    align-self: flex-start;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #ebebed;
+    transition: all 0.5s ease;
+}
+
+.services-item p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.services-item a {
+    color: orange;
+}
+
+.services-item:hover .icon::before{
+    background-color: orange;
+}
+.services-item:hover h3 {
+    border-bottom: 4px solid orange;
 }
 
 /* MediaQuery */
@@ -425,6 +498,17 @@ section {
         width: 100%;
     }
 
+    .services .services-items {
+        margin: 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .services .services-item {
+        width: calc(100% / 2 - 20px);
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -451,6 +535,10 @@ section {
     }
 
     .construction-items .construction-item {
+        width: 100%;
+    }
+
+    .services .services-item {
         width: 100%;
     }
 }
