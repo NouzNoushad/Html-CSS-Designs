@@ -50,6 +50,7 @@ header .container .navbar {
 
 header.sticky {
     background-color: black;
+    height: 70px;
 }
 
 .navbar .nav-title {
@@ -343,7 +344,6 @@ section {
 }
 
 .construction-items .construction-item {
-    /* height: 300px; */
     border: 1px solid #CED4DA;;
     width: calc(100% / 2 - 25px);
     display: flex;
@@ -442,6 +442,79 @@ section {
     border-bottom: 4px solid orange;
 }
 
+/* Alt Services Section */
+
+.alt-service {
+    margin: 25px 0;
+}
+
+.alt-service .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alt-service img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.alt-service .alt-service-content {
+    width: 45%;
+    padding: 0 20px;
+}
+
+.alt-service-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #545860;
+}
+
+.alt-service-content .divider {
+    transform: translateX(-15px);
+}
+
+.alt-service-content p {
+    color: #6E7F87;
+    margin-bottom: 40px;
+}
+
+.alt-service-content .icon-box {
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.icon-box i {
+    padding: 15px;
+    font-size: 1rem;
+    color: orange;
+    border-radius: 3px;
+    box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
+    transition: all 0.5s ease;
+}
+
+.icon-box .stretched-link {
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.icon-box p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #6E7F87;
+}
+
+.alt-service-content .icon-box:hover i{
+    color: #fff;
+    background-color: orange;
+}
+
+.alt-service-content .icon-box:hover .stretched-link {
+    color: orange;
+}
+
+
 /* MediaQuery */
 
 @media screen and (max-width: 1200px) {
@@ -502,12 +575,34 @@ section {
         margin: 0 30px;
     }
 
+    .alt-service .mt {
+        padding: 0 30px;
+    }
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
 
     .services .services-item {
         width: calc(100% / 2 - 20px);
+    }
+
+    .alt-service .container {
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+    }
+
+    .alt-service img {
+        width: 100%;
+    }
+
+    .alt-service .alt-service-content {
+        width: 100%;
+    }
+
+    .alt-service-content .icon-box i {
+        width: 50px;
     }
 }
 
