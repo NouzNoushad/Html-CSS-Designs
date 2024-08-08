@@ -1,0 +1,15 @@
+body {
+    padding: 2rem;
+}
+
+.bg-border {
+    height: 50vh;
+    background-color: antiquewhite;
+    border: 3px solid pink;
+}
+
+.col-border {
+    border: 3px solid pink;
+    color: pink;
+    background-color: white;
+}
