@@ -1,0 +1,13 @@
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    z-index: 10;
+    margin-bottom: 4rem;
+}
+
+.carousel-item {
+    height: 90vh;
+    background-color: gray;
+}
