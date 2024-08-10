@@ -129,10 +129,79 @@
                                 <input type="text" class="form-control bg-dark-subtle" id="zip" required>
                             </div>
                         </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input bg-dark-subtle" id="same-address">
+                            <label for="save-address" class="form-check-label">
+                                Shipping address is the same as my billing address
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input bg-dark-subtle" id="same-address">
+                            <label for="save-info" class="form-check-label">
+                                Save this information for next time
+                            </label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Payment</h4>
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input type="radio" id="credit" name="paymentMethod" class="form-check-input" checked required>
+                                <label for="credit" class="form-check-label">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="debit" name="paymentMethod" class="form-check-input" required>
+                                <label for="debit" class="form-check-label">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="paypal" name="paymentMethod" class="form-check-input" required>
+                                <label for="paypa;" class="form-check-label">Paypal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Name on card</label>
+                                <input type="text" class="form-control bg-dark-subtle" id="cc-name" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control bg-dark-subtle" id="cc-number" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expiration</label>
+                                <input type="text" class="form-control bg-dark-subtle" id="cc-expiration" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control bg-dark-subtle" id="cc-cvv" required>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="button">Continue to checkout</button>
                     </form>
                 </div>
             </div>
         </main>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2017–2021 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
