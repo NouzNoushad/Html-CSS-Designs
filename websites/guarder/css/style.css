@@ -16,11 +16,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.mx-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
 .top-section {
     background-color: var(--nav-color);
     color: #fff;
@@ -28,10 +23,4 @@ body {
 
 .fa-solid {
     color: var(--nav-icon-color);
-}
-
-@media screen and (max-width: 1300px) {
-    .mx-container {
-        padding: 0 20px;
-    }
 }
