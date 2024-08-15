@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 1300px;
+    --nav-color: #1c1c1c;
+    --nav-icon-color: #F1DB25;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.mx-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.top-section {
+    background-color: var(--nav-color);
+    color: #fff;
+}
+
+.fa-solid {
+    color: var(--nav-icon-color);
+}
+
+@media screen and (max-width: 1300px) {
+    .mx-container {
+        padding: 0 20px;
+    }
+}
