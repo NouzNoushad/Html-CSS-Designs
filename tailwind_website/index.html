@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <!-- Scroll Up Button -->
+    <a href="#home">
+        <div class="fixed bottom-[20px] right-[20px] text-white px-[14px] py-[7px] bg-[#ffa500] rounded-[3px] z-10">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
     <!-- Navbar Section -->
     <nav class="bg-black fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between">
@@ -41,7 +47,7 @@
         </div>
     </nav>
     <!-- Home Section -->
-    <section id="home relative">
+    <section id="home" class="relative">
         <div class="before:bg-black/[0.7] before:h-screen before:w-full before:absolute before:left-0 before:top-0">
             <img src="./img/hero-carousel/hero-carousel-4.jpg" alt="" class="bg-fixed h-full w-full bg-cover bg-center"
                 style="height: 100vh;">
@@ -500,16 +506,18 @@
     </section>
 
     <!-- Our Project Section -->
-     <section class="py-[4rem] px-5 xl:px-0">
+    <section class="py-[4rem] px-5 xl:px-0">
         <div class="max-w-6xl mx-auto">
             <div class="pb-10 text-center md:max-w-2xl mx-auto">
                 <h2
                     class="w-fit mx-auto text-[1.8rem] sm:text-[2.1rem] font-semibold relative before:absolute before:h-[2px] before:w-[60px] before:bg-[#ffa500] before:top-[50%] before:left-[-70px] after:absolute after:h-[2px] after:w-[60px] after:bg-[#ffa500] after:top-[50%] after:right-[-70px] mb-2">
                     Our Projects</h2>
-                <p class="text-[#545860] font-normal">Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
-                accusamus fugit aut qui distinctio</p>
+                <p class="text-[#545860] font-normal">Consequatur libero assumenda est voluptatem est quidem illum et
+                    officia imilique qui vel architecto
+                    accusamus fugit aut qui distinctio</p>
             </div>
-            <ul class="flex flex-wrap gap-5 justify-center mx-auto text-[1.1rem] text-[#495E69] font-medium mb-[20px] cursor-pointer">
+            <ul
+                class="flex flex-wrap gap-5 justify-center mx-auto text-[1.1rem] text-[#495E69] font-medium mb-[20px] cursor-pointer">
                 <li class="active text-[#ffa500] transition duration-500">All</li>
                 <li class="hover:text-[#ffa500] transition duration-500">Remodeling</li>
                 <li class="hover:text-[#ffa500] transition duration-500">Construction</li>
@@ -517,59 +525,73 @@
                 <li class="hover:text-[#ffa500] transition duration-500">Design</li>
             </ul>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/construction-1.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/construction-2.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/construction-3.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/design-1.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/design-2.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/design-3.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/remodeling-1.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/remodeling-2.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/remodeling-3.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/repairs-1.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/repairs-2.jpg" alt="">
                 </div>
-                <div class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
+                <div
+                    class="relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[#000000a6] cursor-pointer before:opacity-0 hover:before:opacity-100 transition duration-500">
                     <img src="img/projects/repairs-3.jpg" alt="">
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- Testimonials Section -->
-      <section class="py-[4rem] px-5 xl:px-0 bg-[#F5F6F7]">
+    <!-- Testimonials Section -->
+    <section class="py-[4rem] px-5 xl:px-0 bg-[#F5F6F7]">
         <div class="max-w-6xl mx-auto">
             <div class="pb-10 text-center md:max-w-2xl mx-auto">
                 <h2
                     class="w-fit mx-auto text-[1.8rem] sm:text-[2.1rem] font-semibold relative before:absolute before:h-[2px] before:w-[60px] before:bg-[#ffa500] before:top-[50%] before:left-[-70px] after:absolute after:h-[2px] after:w-[60px] after:bg-[#ffa500] after:top-[50%] after:right-[-70px] mb-2">
                     Testimonials</h2>
-                <p class="text-[#545860] font-normal">Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim
-                velit qui ut et autem uia reprehenderit sunt deleniti</p>
+                <p class="text-[#545860] font-normal">Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum
+                    nostrum enim
+                    velit qui ut et autem uia reprehenderit sunt deleniti</p>
             </div>
             <div class="grid lg:grid-cols-2 gap-[20px]">
                 <div class="bg-white p-[50px] relative sm:ml-[50px]">
-                    <img src="img/testimonials/testimonials-1.jpg" alt="" class="sm:absolute sm:top-[50px] sm:left-[-40px] sm:h-[80px] w-[80px] border-[6px] relative block mb-[8px] border-white rounded">
+                    <img src="img/testimonials/testimonials-1.jpg" alt=""
+                        class="sm:absolute sm:top-[50px] sm:left-[-40px] sm:h-[80px] w-[80px] border-[6px] relative block mb-[8px] border-white rounded">
                     <h3 class="text-[1.1rem] font-bold">Saul Goodman</h3>
                     <h4 class="text-[0.9rem] text-[#9B9B9B]">Ceo &amp; Founder</h4>
                     <div class="stars text-[#ffa500] my-3">
@@ -587,7 +609,8 @@
                     </p>
                 </div>
                 <div class="bg-white p-[50px] relative ml-[50px] lg:block hidden">
-                    <img src="img/testimonials/testimonials-2.jpg" alt="" class="absolute top-[50px] left-[-40px] h-[80px] w-[80px] border-[6px] border-white rounded">
+                    <img src="img/testimonials/testimonials-2.jpg" alt=""
+                        class="absolute top-[50px] left-[-40px] h-[80px] w-[80px] border-[6px] border-white rounded">
                     <h3 class="text-[1.1rem] font-bold">Sara Wilsson</h3>
                     <h4 class="text-[0.9rem] text-[#9B9B9B]">Designer</h4>
                     <div class="stars text-[#ffa500] my-3">
@@ -614,33 +637,41 @@
                 <div class="h-[12px] w-[12px] bg-[#D5D7DA] rounded-[50%]"></div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Blog Section -->
-       <section class="py-[4rem] px-5 xl:px-0">
+    <!-- Blog Section -->
+    <section class="py-[4rem] px-5 xl:px-0">
         <div class="max-w-6xl mx-auto">
             <div class="pb-10 text-center md:max-w-2xl mx-auto">
                 <h2
                     class="w-fit mx-auto text-[1.8rem] sm:text-[2.1rem] font-semibold relative before:absolute before:h-[2px] before:w-[60px] before:bg-[#ffa500] before:top-[50%] before:left-[-70px] after:absolute after:h-[2px] after:w-[60px] after:bg-[#ffa500] after:top-[50%] after:right-[-70px] mb-2">
                     Recent Blog Posts</h2>
-                <p class="text-[#545860] font-normal">In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia
-                consequuntu</p>
+                <p class="text-[#545860] font-normal">In commodi voluptatem excepturi quaerat nihil error autem
+                    voluptate ut et officia
+                    consequuntu</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="group shadow-lg cursor-pointer">
                     <div class="relative">
                         <img src="img/blog/blog-1.jpg" alt="">
-                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">December 12</div>
+                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">
+                            December 12</div>
                     </div>
                     <div class="px-[30px] py-[30px] space-y-[15px]">
-                        <h3 class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                        <h3
+                            class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">
+                            Eum ad dolor et. Autem aut fugiat debitis</h3>
                         <div>
-                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Julia Parker</span>
+                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Julia
+                                Parker</span>
                             <span class="mx-[10px] text-[#91959F]">/</span>
-                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Politics</span>
+                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span
+                                class="text-[#91959F]">Politics</span>
                         </div>
-                        <hr class="border-[#91959F]"/>
-                        <a href="#" class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read More
+                        <hr class="border-[#91959F]" />
+                        <a href="#"
+                            class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read
+                            More
                             <i class="fas fa-arrow-right ml-[8px]"></i>
                         </a>
                     </div>
@@ -648,17 +679,24 @@
                 <div class="group shadow-lg cursor-pointer">
                     <div class="relative">
                         <img src="img/blog/blog-2.jpg" alt="">
-                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">July 17</div>
+                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">
+                            July 17</div>
                     </div>
                     <div class="px-[30px] py-[30px] space-y-[15px]">
-                        <h3 class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">Et repellendus molestiae qui est sed omnis</h3>
+                        <h3
+                            class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">
+                            Et repellendus molestiae qui est sed omnis</h3>
                         <div class="blog-details">
-                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Mario Douglas</span>
+                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Mario
+                                Douglas</span>
                             <span class="mx-[10px] text-[#91959F]">/</span>
-                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Sports</span>
+                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span
+                                class="text-[#91959F]">Sports</span>
                         </div>
                         <hr class="border-[#91959F]">
-                        <a href="#" class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read More
+                        <a href="#"
+                            class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read
+                            More
                             <i class="fas fa-arrow-right ml-[8px]"></i>
                         </a>
                     </div>
@@ -666,24 +704,31 @@
                 <div class="group shadow-lg cursor-pointer">
                     <div class="relative">
                         <img src="img/blog/blog-3.jpg" alt="">
-                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">September 05</div>
+                        <div class="absolute bottom-0 right-0 py-[5px] px-[10px] bg-[#ffa500] text-white text-[1rem]">
+                            September 05</div>
                     </div>
                     <div class="px-[30px] py-[30px] space-y-[15px]">
-                        <h3 class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">Quia assumenda est et veritati tirana ploder</h3>
+                        <h3
+                            class="text-[1.3rem] text-[#545860] font-bold group-hover:text-[#ffa500] transition duration-500">
+                            Quia assumenda est et veritati tirana ploder</h3>
                         <div class="blog-details">
-                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Lisa Hunter</span>
+                            <i class="fa-regular fa-user text-[#ffa500] mr-3"></i><span class="text-[#91959F]">Lisa
+                                Hunter</span>
                             <span class="mx-[10px] text-[#91959F]">/</span>
-                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span class="text-[#91959F]">PEconomics</span>
+                            <i class="fa-regular fa-envelope text-[#ffa500] mr-3"></i><span
+                                class="text-[#91959F]">PEconomics</span>
                         </div>
                         <hr class="border-[#91959F]">
-                        <a href="#" class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read More
+                        <a href="#"
+                            class="text-[#858A95] block font-semibold group-hover:text-[#ffa500] transition duration-500">Read
+                            More
                             <i class="fas fa-arrow-right ml-[8px]"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-       </section>
+    </section>
 </body>
 
 </html>
