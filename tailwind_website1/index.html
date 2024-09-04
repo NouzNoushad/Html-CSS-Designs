@@ -23,40 +23,61 @@
             <div class="max-w-7xl mx-auto px-5 xl:px-0 flex justify-between item-center">
                 <div class="cursor-pointer">
                     <i class="fa-solid fa-location-dot mr-[4px] text-[#F1DB25]"></i>
-                    <span class="text-[0.95rem] sm:inline-block hidden">
+                    <span class="text-[0.95rem] md:inline-block hidden">
                         Lorem ipsum dolor sit amet,</span>
                 </div>
                 <div class="cursor-pointer">
                     <i class="fa-solid fa-phone mr-[4px] text-[#F1DB25]"></i>
-                    <span class="text-[0.95rem] sm:inline-block hidden">
+                    <span class="text-[0.95rem] md:inline-block hidden">
                         Call : +01 1234567890</span>
                 </div>
                 <div class="cursor-pointer">
                     <i class="fa-solid fa-envelope mr-[4px] text-[#F1DB25]"></i>
-                    <span class="text-[0.95rem] sm:inline-block hidden">
+                    <span class="text-[0.95rem] md:inline-block hidden">
                         demo@gmail.com</span>
                 </div>
             </div>
         </div>
-        <nav class="main-nav">
-            <div class="nav-container d-flex">
-                <h1><a href="#home">Guarder</a></h1>
-                <ul class="nav-links">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#guards">Guards</a></li>
-                    <div class="cancel-btn">
+        <nav class="h-[70px] w-full relative">
+            <div class="max-w-7xl mx-auto px-5 xl:px-0 flex justify-between h-full items-center">
+                <h1 class="text-[1.5rem] font-bold text-white"><a href="#home">Guarder</a></h1>
+                <ul class="h-full hidden lg:flex items-center">
+                    <li class="active h-full px-[15px] py-[10px] flex items-end bg-[#000] transition duration-500 uppercase font-medium text-white"><a href="#home">Home</a></li>
+                    <li class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white"><a href="#about">About</a></li>
+                    <li class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white"><a href="#services">Services</a></li>
+                    <li class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white"><a href="#contact">Contact Us</a></li>
+                    <li class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white"><a href="#guards">Guards</a></li>
+                    <div class="absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer hidden">
                         <i class="fas fa-times"></i>
                     </div>
                 </ul>
             </div>
-            <div class="menu-btn">
+            <div class="absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer lg:hidden inline-block">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
+
+    <!-- Home Section -->
+    <section class="min-h-screen relative bg-[url('images/hero-bg.jpg')] bg-cover bg-top h-full w-full before:absolute before:h-full before:w-full before:bg-[#00000080] before:top-0 before:left-0 content-center" id="home">
+        <div class="relative pt-[150px] text-white max-w-[1150px] mx-auto px-5 xl:px-0 flex flex-col item-center md:flex-row md:items-end justify-between gap-5 text-center md:text-start transition duration-300">
+            <div class="md:max-w-[600px]">
+                <h1 class="md:text-[2.6rem] sm:text-[2.3rem] text-[1.5rem] font-bold uppercase">Your Safety</h1>
+                <h1 class="md:text-[2.6rem] sm:text-[2.3rem] text-[1.5rem] font-bold uppercase text-[#F1DB25]">Our Responsibility</h1>
+                <p class="my-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad
+                    minim
+                    veniam</p>
+                <button class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-white text-black my-2 sm:mr-2">Read more</button>
+                <button class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white">Get A Quote</button>
+            </div>
+            <div class="flex gap-[8px] mx-auto">
+                <div class="sm:size-[20px] size-[15px] rounded-[50%] bg-[#F1DB25]"></div>
+                <div class="sm:size-[20px] size-[15px] rounded-[50%] bg-[#F1DB25]""></div>
+                <div class="sm:size-[20px] size-[15px] rounded-[50%] bg-[#F1DB25]""></div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End -->
 </body>
 
 </html>
