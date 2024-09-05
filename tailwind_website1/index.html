@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/8c6e91ef5e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
+<style>
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+</style>
 
 <body style="font-family: 'Poppins';">
     <!-- Scroll Up Button -->
@@ -135,7 +146,7 @@
     <section class="bg-[#1C1C1C] text-white py-[60px]" id="services">
         <div class="max-w-[1200px] mx-auto px-5 xl:px-0">
             <div
-                class="w-fit mx-auto text-[2rem] font-bold mb-[40px] relative uppercase before:absolute before:left-[50%] before:translate-x-[-50%] before:bottom-[-5px] before:h-[7px] before:w-[45px] before:rounded-[5px] before:bg-[#F1DB25]">
+                class="w-fit mx-auto text-[1.7rem] md:text-[2rem] font-bold mb-[40px] relative uppercase before:absolute before:left-[50%] before:translate-x-[-50%] before:bottom-[-5px] before:h-[7px] before:w-[45px] before:rounded-[5px] before:bg-[#F1DB25]">
                 Our Services
             </div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
@@ -168,7 +179,9 @@
                             Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis
                             impedit ut minus tenetur corrupti excepturi ullam.
                         </p>
-                        <button class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read More</button>
+                        <button
+                            class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read
+                            More</button>
                     </div>
                 </div>
                 <div class="bg-white px-[25px] py-[25px] text-black text-center space-y-[20px]">
@@ -251,7 +264,9 @@
                             Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis
                             impedit ut minus tenetur corrupti excepturi ullam.
                         </p>
-                        <button class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read More</button>
+                        <button
+                            class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read
+                            More</button>
                     </div>
                 </div>
                 <div class="bg-white px-[25px] py-[25px] text-black text-center space-y-[20px]">
@@ -324,13 +339,54 @@
                             Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis
                             impedit ut minus tenetur corrupti excepturi ullam.
                         </p>
-                        <button class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read More</button>
+                        <button
+                            class="border-[2px] border-transparent px-[20px] sm:px-[50px] py-[12px] text-[1rem] cursor-pointer bg-[#F1DB25] text-white hover:border-[#F1DB25] hover:text-[#F1DB25] hover:bg-transparent transition duration-500  ">Read
+                            More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Services Section End -->
+
+    <!-- Review Section -->
+    <section class="py-[60px]">
+        <div class="max-w-[1200px] mx-auto px-5 xl:px-0">
+            <div
+                class="w-fit mx-auto text-[1.7rem] md:text-[2rem] font-bold mb-[40px] relative uppercase before:absolute before:left-[50%] before:translate-x-[-50%] before:bottom-[-5px] before:h-[7px] before:w-[45px] before:rounded-[5px] before:bg-[#F1DB25] text-center">
+                What is Says Our Clients</div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide space-y-[15px] text-center">
+                        <img src="images/client.png" alt="" class="mx-auto h-[120px]">
+                        <h3 class="text-[1.2rem] font-bold">Minim Veniam</h3>
+                        <p class="max-w-[900px] mx-auto my-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip</p>
+                    </div>
+                    <div class="space-y-[15px] text-center swiper-slide">
+                        <img src="images/client.png" alt="" class="mx-auto h-[120px]">
+                        <h3 class="text-[1.2rem] font-bold">Minim Veniam</h3>
+                        <p class="max-w-[900px] mx-auto my-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip</p>
+                    </div>
+                    <div class="space-y-[15px] text-center swiper-slide">
+                        <img src="images/client.png" alt="" class="mx-auto h-[120px]">
+                        <h3 class="text-[1.2rem] font-bold">Minim Veniam</h3>
+                        <p class="max-w-[900px] mx-auto my-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn h-[2.8rem] w-[2.8rem] bg-black rounded-[50%] text-white"></div>
+                <div class="swiper-button-prev swiper-navBtn h-[2.8rem] w-[2.8rem] bg-black rounded-[50%] text-white"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Review Section End -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
