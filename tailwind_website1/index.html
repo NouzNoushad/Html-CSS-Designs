@@ -20,12 +20,25 @@
         font-size: 0.8rem;
         font-weight: 600;
     }
+
+    header .main-nav.sticky {
+        background-color: #000;
+        height: 50px;
+    }
+
+    .main-nav.sticky :is(.menu-btn, .nav-links .cancel-btn) {
+        top: 10px;
+    }
+
+    .main-nav.active .nav-links {
+        right: 0;
+    }
 </style>
 
 <body style="font-family: 'Poppins';">
     <!-- Scroll Up Button -->
     <a href="#home"
-        class="fixed bottom-[20px] right-[20px] text-white bg-[#F1DB25] px-[14px] py-[7px] rounded-[3px] shadow-lg z-10">
+        class="scroll-btn fixed bottom-[20px] right-[20px] text-white bg-[#F1DB25] px-[14px] py-[7px] rounded-[3px] shadow-lg z-10 hidden transition-all duration-300 ease-in-out">
         <i class="fas fa-arrow-up"></i>
     </a>
 
@@ -50,37 +63,39 @@
                 </div>
             </div>
         </div>
-        <nav class="h-[70px] w-full relative">
+        <nav class="h-[70px] w-full relative main-nav transition-all duration-300 ease-in-out">
             <div class="max-w-7xl mx-auto px-5 xl:px-0 flex justify-between h-full items-center">
                 <h1 class="text-[1.5rem] font-bold text-white"><a href="#home">Guarder</a></h1>
-                <ul class="h-full hidden lg:flex items-center">
+                <ul
+                    class="nav-links lg:h-full lg:w-fit lg:flex lg:flex-row lg:items-center lg:relative lg:top-0 lg:right-0 lg:bg-transparent fixed w-full h-full top-[48px] right-[-100%] bg-black text-white transition-all duration-300 ease-in-out flex flex-col items-center justify-center z-10">
                     <li
-                        class="active h-full px-[15px] py-[10px] flex items-end bg-[#000] transition duration-500 uppercase font-medium text-white">
+                        class="active h-auto lg:h-full px-[15px] py-[10px] flex items-end bg-[#000] transition duration-500 uppercase font-medium text-white">
                         <a href="#home">Home</a>
                     </li>
                     <li
-                        class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
+                        class="h-auto lg:h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
                         <a href="#about">About</a>
                     </li>
                     <li
-                        class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
+                        class="h-auto lg:h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
                         <a href="#services">Services</a>
                     </li>
                     <li
-                        class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
+                        class="h-auto lg:h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
                         <a href="#contact">Contact Us</a>
                     </li>
                     <li
-                        class="h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
+                        class="h-auto lg:h-full px-[15px] py-[10px] flex items-end hover:bg-[#000] transition duration-500 uppercase font-medium text-white">
                         <a href="#guards">Guards</a>
                     </li>
-                    <div class="absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer hidden">
+                    <div
+                        class="cancel-btn absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer lg:hidden inline-block">
                         <i class="fas fa-times"></i>
                     </div>
                 </ul>
             </div>
             <div
-                class="absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer lg:hidden inline-block">
+                class="menu-btn absolute top-[20px] right-[30px] text-white text-[1.4rem] cursor-pointer lg:hidden inline-block">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
@@ -502,8 +517,10 @@
                 </div>
                 <div>
                     <h4 class="mb-[10px] text-[1.2rem] font-medium">Newsletter</h4>
-                    <input type="email" placeholder="Enter your eamil" class="w-full px-[20px] py-[12px] placeholder:uppercase placeholder:text-black rounded-[40px] text-sm">
-                    <button class="my-[15px] px-[30px] py-[10px] rounded-[50px] uppercase text-white bg-[#F1DB25]">Subscribe</button>
+                    <input type="email" placeholder="Enter your eamil"
+                        class="w-full px-[20px] py-[12px] placeholder:uppercase placeholder:text-black rounded-[40px] text-sm">
+                    <button
+                        class="my-[15px] px-[30px] py-[10px] rounded-[50px] uppercase text-white bg-[#F1DB25]">Subscribe</button>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-twitter ml-[5px] text-[1.2rem]"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook ml-[5px] text-[1.2rem]"></i></a>
