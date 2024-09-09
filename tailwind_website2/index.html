@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="smooth-scrolling">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,10 @@
 </head>
 
 <style>
+    html, body {
+        scroll-behavior: smooth;
+    }
+
     .font-cursive {
         font-family: "Dancing Script";
     }
@@ -37,7 +41,7 @@
 <body class="font-open">
     <!-- Scroll Up Button -->
     <a href="#home"
-        class="scroll-btn fixed bottom-[20px] right-[20px] bg-[#FFBE33] text-white z-100 px-[15px] py-[8px] rounded-[5px] transition-all duration-500 hover:bg-[#e99f00]">
+        class="scroll-btn fixed bottom-[20px] right-[20px] bg-[#FFBE33] text-white z-50 px-[15px] py-[8px] rounded-[5px] transition-all duration-500 hover:bg-[#e99f00]">
         <div class="scroll-btn">
             <i class="fas fa-arrow-up"></i>
         </div>
@@ -97,7 +101,9 @@
     </header>
 
     <!-- Home Section -->
-    <section class="relative h-[100vh] w-full bg-cover bg-center bg-[url(images/hero-bg.jpg)] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#00000080]" id="home">
+    <section
+        class="relative h-[100vh] w-full bg-cover bg-center bg-[url(images/hero-bg.jpg)] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#00000080]"
+        id="home">
         <div class="max-w-[1150px] mx-auto h-full flex items-center px-5 xl:px-0">
             <div class="home-content swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -140,6 +146,230 @@
                 </div>
                 <div class="pagination">
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-[5rem]" id="menu">
+        <div class="max-w-[1150px] mx-auto px-5 xl:px-0">
+            <div class="space-y-[30px]">
+                <div class="grid md:grid-cols-2 gap-[20px]">
+                    <div
+                        class="px-[20px] py-[20px] rounded-[5px] text-white bg-[#222831] flex lg:flex-row md:flex-col items-center gap-[20px]">
+                        <div
+                            class="w-[140px] h-[140px] md:w-[180px] md:h-[180px] border-[5px] rounded-[50%] border-[#FFBE33]">
+                            <img src="images/o1.jpg" alt="" class="w-full h-full rounded-[50%] object-cover">
+                        </div>
+                        <div class="lg:text-start md:text-center">
+                            <h3 class="text-[1.5rem] font-cursive">Tasty Thursdays</h3>
+                            <div class="font-cursive text-[2.5rem] my-[10px] font-medium">20%<span
+                                    class="font-cursive text-[1rem]"> Off</span>
+                            </div>
+                            <button
+                                class="px-[20px] md:px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[0.8rem] md:text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">
+                                Order Now
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="px-[20px] py-[20px] rounded-[5px] text-white bg-[#222831] flex lg:flex-row md:flex-col items-center gap-[20px]">
+                        <div
+                            class="w-[140px] h-[140px] md:w-[180px] md:h-[180px] border-[5px] rounded-[50%] border-[#FFBE33]">
+                            <img src="images/o2.jpg" alt="" class="w-full h-full rounded-[50%] object-cover">
+                        </div>
+                        <div class="lg:text-start md:text-center">
+                            <h3 class="text-[1.5rem] font-cursive">Pizza Days</h3>
+                            <div class="font-cursive text-[2.5rem] my-[10px] font-medium">15%<span
+                                    class="font-cursive text-[1rem]"> Off</span>
+                            </div>
+                            <button
+                                class="px-[20px] md:px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[0.8rem] md:text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">
+                                Order Now
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-[40px] font-cursive text-[2.5rem] text-center">Our Menu</h2>
+                <ul class="flex flex-wrap gap-[10px] items-center justify-center">
+                    <li><a href="#"
+                            class="inline-block px-[25px] py-[8px] rounded-[30px] transition-all duration-500 bg-[#222831] text-white">All</a>
+                    </li>
+                    <li><a href="#"
+                            class="inline-block px-[25px] py-[8px] rounded-[30px] transition-all duration-500 text-[#222831] hover:bg-[#222831] hover:text-white">Burger</a>
+                    </li>
+                    <li><a href="#"
+                            class="inline-block px-[25px] py-[8px] rounded-[30px] transition-all duration-500 text-[#222831] hover:bg-[#222831] hover:text-white">Pizza</a>
+                    </li>
+                    <li><a href="#"
+                            class="inline-block px-[25px] py-[8px] rounded-[30px] transition-all duration-500 text-[#222831] hover:bg-[#222831] hover:text-white">Pasta</a>
+                    </li>
+                    <li><a href="#"
+                            class="inline-block px-[25px] py-[8px] rounded-[30px] transition-all duration-500 text-[#222831] hover:bg-[#222831] hover:text-white">Fries</a>
+                    </li>
+                </ul>
+                <div class="mt-[20px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px]">
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f1.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Pizza</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$20</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f2.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Burger</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$15</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f3.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Pizza</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$17</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f4.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Pasta</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$20</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f5.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">French Fries</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$10</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f6.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Pizza</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$15</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f7.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Tasty Burger</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$12</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f8.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Tasty Burger</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$14</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#222831] min-h-[450px] lg:min-h-[420px]"
+                        style="clip-path: inset(0 0 0 0 round 20px);">
+                        <div class="h-1/2 bg-[#F1F2F3] rounded-bl-[50px] flex items-center justify-center">
+                            <img src="images/f9.png" alt=""
+                                class="w-[150px] object-cover transition-width duration-500 hover:w-[180px]">
+                        </div>
+                        <div class="h-1/2 text-white px-[20px] py-[20px] space-y-[20px]">
+                            <h3 class="font-semibold text-[1.2rem]">Delicious Pasta</h3>
+                            <p class="text-[0.9rem]">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                                velit, magnam voluptatem
+                                repellendus sed eaque</p>
+                            <div class="flex justify-between">
+                                <div class="price">$10</div>
+                                <i class="fa-solid fa-cart-shopping px-[10px] py-[10px] bg-[#FFBE33] rounded-[50%]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button
+                        class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">View
+                        More</button>
                 </div>
             </div>
         </div>
