@@ -26,6 +26,12 @@
     .nav-bar.active .links-box {
         right: 0;
     }
+
+    .pagination .swiper-pagination-bullet {
+        background-color: #FFBE33;
+        height: 1rem;
+        width: 1rem;
+    }
 </style>
 
 <body class="font-open">
@@ -42,37 +48,102 @@
         <div class="max-w-[1150px] mx-auto px-5 xl:px-0 h-full">
             <nav class="nav-bar text-white flex items-center justify-between relative h-full">
                 <h1 class="font-cursive text-[2rem] font-bold text-white">Restaurant</h1>
-                <div class="links-box lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-[5rem] lg:relative lg:top-0 lg:right-0 lg:bg-transparent lg:w-full lg:h-full fixed top-0 right-[-100%] h-full w-full bg-[#222831] flex flex-col items-center justify-center text-white gap-[30px] transition-all duration-500 z-10">
+                <div
+                    class="links-box lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-[5rem] lg:relative lg:top-0 lg:right-0 lg:bg-transparent lg:w-full lg:h-full fixed top-0 right-[-100%] h-full w-full bg-[#222831] flex flex-col items-center justify-center text-white gap-[30px] transition-all duration-500 z-10">
                     <ul class="flex lg:flex-row flex-col items-center gap-[30px]">
-                        <li><a href="#home" class="active text-[#FFBE33] font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Home</a></li>
-                        <li><a href="#menu" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Menu</a></li>
-                        <li><a href="#about" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">About</a></li>
-                        <li><a href="#book" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33] ">Book Table</a></li>
+                        <li><a href="#home"
+                                class="active text-[#FFBE33] font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Home</a>
+                        </li>
+                        <li><a href="#menu"
+                                class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Menu</a>
+                        </li>
+                        <li><a href="#about"
+                                class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">About</a>
+                        </li>
+                        <li><a href="#book"
+                                class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33] ">Book
+                                Table</a></li>
                     </ul>
                     <div class="flex lg:flex-row flex-col items-center gap-[30px]">
                         <div>
-                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                            <a href="#"
+                                class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
                                 <i class="fa-solid fa-user"></i>
                             </a>
-                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                            <a href="#"
+                                class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
-                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                            <a href="#"
+                                class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
                         </div>
-                        <button class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order Online</button>
-                        <div class="cancel-btn absolute top-[40px] right-[20px] text-white text-[1.3rem] translate-y-[-50%] lg:hidden inline-block">
+                        <button
+                            class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order
+                            Online</button>
+                        <div
+                            class="cancel-btn absolute top-[40px] right-[20px] text-white text-[1.3rem] translate-y-[-50%] lg:hidden inline-block">
                             <i class="fas fa-times"></i>
                         </div>
                     </div>
                 </div>
-                <div class="menu-btn absolute top-[50%] right-0 text-white text-[1.3rem] translate-y-[-50%] lg:hidden inline-block">
+                <div
+                    class="menu-btn absolute top-[50%] right-0 text-white text-[1.3rem] translate-y-[-50%] lg:hidden inline-block">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
+
+    <!-- Home Section -->
+    <section class="relative h-[100vh] w-full bg-cover bg-center bg-[url(images/hero-bg.jpg)] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#00000080]" id="home">
+        <div class="max-w-[1150px] mx-auto h-full flex items-center px-5 xl:px-0">
+            <div class="home-content swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2 class="text-[3.5rem] text-white font-medium font-cursive">Fast Food Restaurant</h2>
+                        <p class="my-[30px] max-w-[500px] text-white text-[0.9rem]">Doloremque, itaque aperiam facilis
+                            rerum, commodi, temporibus sapiente ad mollitia laborum
+                            quam
+                            quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni
+                            quos nihil
+                            ducimus libero ipsam.</p>
+                        <button
+                            class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order
+                            Now</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="text-[3.5rem] text-white font-medium font-cursive">Fast Food Restaurant</h2>
+                        <p class="my-[30px] max-w-[500px] text-white text-[0.9rem]">Doloremque, itaque aperiam facilis
+                            rerum, commodi, temporibus sapiente ad mollitia laborum
+                            quam
+                            quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni
+                            quos nihil
+                            ducimus libero ipsam.</p>
+                        <button
+                            class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order
+                            Now</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="text-[3.5rem] text-white font-medium font-cursive">Fast Food Restaurant</h2>
+                        <p class="my-[30px] max-w-[500px] text-white text-[0.9rem]">Doloremque, itaque aperiam facilis
+                            rerum, commodi, temporibus sapiente ad mollitia laborum
+                            quam
+                            quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni
+                            quos nihil
+                            ducimus libero ipsam.</p>
+                        <button
+                            class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order
+                            Now</button>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
