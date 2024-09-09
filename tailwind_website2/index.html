@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scrolling">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8c6e91ef5e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    .font-cursive {
+        font-family: "Dancing Script";
+    }
+
+    .font-open {
+        font-family: "Open Sans";
+    }
+</style>
+
+<body class="font-open">
+    <!-- Scroll Up Button -->
+    <a href="#home"
+        class="fixed bottom-[20px] right-[20px] bg-[#FFBE33] text-white z-100 px-[15px] py-[8px] rounded-[5px] transition-all duration-500 hover:bg-[#e99f00]">
+        <div class="scroll-btn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full h-[12vh] bg-black z-50 transition-all duration-500">
+        <div class="max-w-[1150px] mx-auto px-5 xl:px-0 h-full">
+            <nav class="text-white flex items-center justify-between relative h-full">
+                <h1 class="font-cursive text-[2rem] font-bold text-white">Restaurant</h1>
+                <div class="flex items-center gap-[5rem]">
+                    <ul class="flex items-center gap-[30px]">
+                        <li><a href="#home" class="active text-[#FFBE33] font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Home</a></li>
+                        <li><a href="#menu" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">Menu</a></li>
+                        <li><a href="#about" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33]">About</a></li>
+                        <li><a href="#book" class="active text-white font-medium uppercase transition-all duration-500 hover:text-[#FFBE33] ">Book Table</a></li>
+                    </ul>
+                    <div class="flex items-center">
+                        <div>
+                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <a href="#" class="text-white mr-[15px] cursor-pointer transition-all duration-500 hover:text-[#FFBE33]">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <button class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00]">Order Online</button>
+                        <div class="cancel-btn absolute top-[50%] right-0 text-white text-[1.3rem] translate-y-[-50%] hidden">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-btn absolute top-[50%] right-0 text-white text-[1.3rem] translate-y-[-50%] hidden">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
