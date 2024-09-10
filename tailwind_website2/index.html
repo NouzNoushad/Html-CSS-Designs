@@ -20,6 +20,11 @@
         scroll-behavior: smooth;
     }
 
+    header.sticky {
+        height: 10vh;
+        background-color: #222831;
+    }
+
     .font-cursive {
         font-family: "Dancing Script";
     }
@@ -49,7 +54,7 @@
     </a>
 
     <!-- Header Section -->
-    <header class="fixed top-0 left-0 w-full h-[12vh] bg-black z-50 transition-all duration-500">
+    <header class="fixed top-0 left-0 w-full h-[12vh] bg-transparent z-50">
         <div class="max-w-[1150px] mx-auto px-5 xl:px-0 h-full">
             <nav class="nav-bar text-white flex items-center justify-between relative h-full">
                 <h1 class="font-cursive text-[2rem] font-bold text-white">Restaurant</h1>
@@ -405,13 +410,25 @@
                 <div class="lg:w-1/2 md:w-[90%]">
                     <h2 class="text-[2.2rem] font-cursive mb-[20px]">Book A Table</h2>
                     <form action="" class="book-form">
-                        <input type="text" class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black" placeholder="Your Name">
-                        <input type="number" class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black" placeholder="Phone Number">
-                        <input type="email" class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black" placeholder="Your Email">
-                        <input type="text" class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black" placeholder="How many persons?">
-                        <input type="date" class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black" placeholder="">
+                        <input type="text"
+                            class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black"
+                            placeholder="Your Name">
+                        <input type="number"
+                            class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black"
+                            placeholder="Phone Number">
+                        <input type="email"
+                            class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black"
+                            placeholder="Your Email">
+                        <input type="text"
+                            class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black"
+                            placeholder="How many persons?">
+                        <input type="date"
+                            class="w-full text-[1rem] rounded-[4px] border-[1px] border-[#8d8c8c] my-[10px] px-[20px] py-[14px] placeholder:text-black"
+                            placeholder="">
                     </form>
-                    <button class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00] mt-[30px]">Book Now</button>
+                    <button
+                        class="px-[30px] py-[10px] bg-[#FFBE33] text-white rounded-[30px] text-[1rem] cursor-pointer transition-all duration-500 hover:bg-[#e99f00] mt-[30px]">Book
+                        Now</button>
                 </div>
                 <div class="lg:w-1/2 md:w-[90%] w-full h-[350px] bg-[#8d8c8c] border-[1px] border-black rounded-[5px]">
                 </div>
@@ -438,8 +455,10 @@
                                 magna aliqua
                             </p>
                         </div>
-                        <div class="mt-[30px] h-[120px] w-[120px] rounded-[50%] border-[5px] border-[#FFBE33] relative before:absolute before:h-[40px] before:w-[40px] before:top-[-10px] before:left-[50%] before:bg-[#FFBE33] before:translate-x-[-50%] before:rotate-45">
-                            <img src="images/client1.jpg" alt="" class="w-full h-full object-cover rounded-[50%] relative">
+                        <div
+                            class="mt-[30px] h-[120px] w-[120px] rounded-[50%] border-[5px] border-[#FFBE33] relative before:absolute before:h-[40px] before:w-[40px] before:top-[-10px] before:left-[50%] before:bg-[#FFBE33] before:translate-x-[-50%] before:rotate-45">
+                            <img src="images/client1.jpg" alt=""
+                                class="w-full h-full object-cover rounded-[50%] relative">
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -455,15 +474,73 @@
                                 magna aliqua
                             </p>
                         </div>
-                        <div class="mt-[30px] h-[120px] w-[120px] rounded-[50%] border-[5px] border-[#FFBE33] relative before:absolute before:h-[40px] before:w-[40px] before:top-[-10px] before:left-[50%] before:bg-[#FFBE33] before:translate-x-[-50%] before:rotate-45">
-                            <img src="images/client2.jpg" alt="" class="w-full h-full object-cover rounded-[50%] relative">
+                        <div
+                            class="mt-[30px] h-[120px] w-[120px] rounded-[50%] border-[5px] border-[#FFBE33] relative before:absolute before:h-[40px] before:w-[40px] before:top-[-10px] before:left-[50%] before:bg-[#FFBE33] before:translate-x-[-50%] before:rotate-45">
+                            <img src="images/client2.jpg" alt=""
+                                class="w-full h-full object-cover rounded-[50%] relative">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Footer Section -->
+
+    <footer class="pt-[5rem] pb-[3rem] bg-[#222831] text-white">
+        <div class="max-w-[1150px] mx-auto px-5 xl:px-0">
+            <div class="flex flex-col items-center justify-center gap-[25px]">
+                <div class="grid md:grid-cols-3 gap-[20px] mb-[30px]">
+                    <div class="flex flex-col items-center gap-[20px]">
+                        <h2 class="font-cursive text-[1.5rem] font-semibold">Contact Us</h2>
+                        <div class="top-nav-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                Location</span>
+                        </div>
+                        <div class="top-nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                Call : +01 1234567890</span>
+                        </div>
+                        <div class="top-nav-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>
+                                demo@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center gap-[20px]">
+                        <h1 class="font-cursive text-[2rem] font-semibold">Restaurant</h1>
+                        <p class="text-center">Necessary, making this the first true generator on the Internet. It uses
+                            a dictionary of over
+                            200
+                            Latin words, combined with</p>
+                        <div class="social-links">
+                            <a href="#"><i
+                                    class="fa-brands fa-twitter px-[6px] py-[5px] bg-white text-[#222831] rounded-[50%]"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-facebook px-[6px] py-[5px] bg-white text-[#222831] rounded-[50%]"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-instagram px-[6px] py-[5px] bg-white text-[#222831] rounded-[50%]"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-linkedin px-[6px] py-[5px] bg-white text-[#222831] rounded-[50%]"></i></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center gap-[20px]">
+                        <h2 class="font-cursive text-[1.5rem] font-semibold">Opening Hours</h2>
+                        <p class="text-center">Everyday</p>
+                        <p class="text-center">10.00 Am - 10.00 Pm</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2024 All Rights Reserved By Restaurant
+                </div>
+                <div class="credits">Distributed by <a href="#">Somebody</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 
