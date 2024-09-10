@@ -19,3 +19,21 @@ const swiper = new Swiper('.mySwiper', {
     },
     autoplay: {}
 });
+
+const cSwiper = new Swiper('.cSwiper', {
+    direction: 'horizontal',
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {},
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 50
+        },
+        980: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 50
+        }
+    }
+});
