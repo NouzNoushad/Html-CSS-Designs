@@ -31,6 +31,10 @@
     .bg-design::before {
         clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 35% 100%);
     }
+
+    .about-box::before {
+        clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 35% 100%);
+    }
 </style>
 
 <body>
@@ -102,20 +106,29 @@
         class="relative bg-[url(img/bg.png)] bg-[#90BC79] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] bg-design"
         id="home">
         <div class="max-w-[1300px] mx-auto px-5 xl:px-0 mt-[14vh] py-[5rem]">
-            <div class="relative h-full flex flex-col lg:flex-row items-center justify-between gap-[20px] lg:text-start text-center">
+            <div
+                class="relative h-full flex flex-col lg:flex-row items-center justify-between gap-[20px] lg:text-start text-center">
                 <div class="h-full w-full md:w-[90%] lg:w-[50%] space-y-[18px] text-white">
                     <h4 class="font-open text-[1.5rem] font-light">Natural & Organic</h4>
                     <div class="title">
-                        <h2 class="font-poppins text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-[2.8rem] md:leading-[4rem]">Hair <span class="text-[#1C2900] font-thin">Shampoo</span> For</h2>
-                        <h2 class="font-poppins text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-[2.8rem] md:leading-[4rem]">Healthy Hair</h2>
+                        <h2
+                            class="font-poppins text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-[2.8rem] md:leading-[4rem]">
+                            Hair <span class="text-[#1C2900] font-thin">Shampoo</span> For</h2>
+                        <h2
+                            class="font-poppins text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-[2.8rem] md:leading-[4rem]">
+                            Healthy Hair</h2>
                     </div>
                     <p class="font-medium font-open">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat rutrum lectus, sed auctor
                         ex malesuada id. Orci varius natoque penatibus et magnis dis parturient montes.
                     </p>
                     <div class="flex flex-wrap items-center justify-center lg:justify-start  gap-[15px]">
-                        <button class="bg-[#1C2900] text-white text-[1rem] font-medium px-[30px] py-[12px] rounded-[5px] border-[3px] border-transparent font-open">Shop Now</button>
-                        <button class="bg-transparent text-[#1C2900] text-[1rem] font-medium px-[30px] py-[12px] rounded-[5px] border-[3px] border-[#1C2900] font-open transition-all duration-500 hover:bg-[#1C2900] hover:text-white">Contact Us</button>
+                        <button
+                            class="bg-[#1C2900] text-white text-[1rem] font-medium px-[30px] py-[12px] rounded-[5px] border-[3px] border-transparent font-open">Shop
+                            Now</button>
+                        <button
+                            class="bg-transparent text-[#1C2900] text-[1rem] font-medium px-[30px] py-[12px] rounded-[5px] border-[3px] border-[#1C2900] font-open transition-all duration-500 hover:bg-[#1C2900] hover:text-white">Contact
+                            Us</button>
                     </div>
                 </div>
                 <div class="h-full w-full md:w-[90%] lg:w-[50%] mt-[20px] lg:mt-0">
@@ -125,6 +138,56 @@
         </div>
     </main>
     <!-- Home Section End -->
+
+    <!-- About Section -->
+    <section class="py-[5rem]" id="about">
+        <div class="max-w-[1300px] mx-auto px-5 xl:px-0">
+            <div>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px]">
+                    <div
+                        class="h-[230px] bg-[#90BC79] relative flex items-center justify-center before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] about-box">
+                        <div class="relative border-[3px] border-[#ffffff33] h-[calc(100%-30px)] w-[calc(100%-30px)] flex flex-col items-center justify-center gap-[20px]">
+                            <i class="fa-solid fa-leaf text-[#1C2900] text-[3rem]"></i>
+                            <h3 class="text-white text-[1.2rem] font-poppins font-semibold">100% Natural</h3>
+                        </div>
+                    </div>
+                    <div class="h-[230px] bg-[#90BC79] relative flex items-center justify-center before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] about-box">
+                        <div class="relative border-[3px] border-[#ffffff33] h-[calc(100%-30px)] w-[calc(100%-30px)] flex flex-col items-center justify-center gap-[20px]">
+                            <i class="fa-solid fa-droplet-slash text-[#1C2900] text-[3rem]"></i>
+                            <h3 class="text-white text-[1.2rem] font-poppins font-semibold">Anti Hair Fall</h3>
+                        </div>
+
+                    </div>
+                    <div class="h-[230px] bg-[#90BC79] relative flex items-center justify-center before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] about-box">
+                        <div class="relative border-[3px] border-[#ffffff33] h-[calc(100%-30px)] w-[calc(100%-30px)] flex flex-col items-center justify-center gap-[20px]">
+                            <i class="fa-solid fa-xmark text-[#1C2900] text-[3rem]"></i>
+                            <h3 class="text-white text-[1.2rem] font-poppins font-semibold">Hypoallergenic</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-description mt-[50px]">
+                    <div class="about-img">
+                        <img src="img/shampoo-1.png" alt="">
+                    </div>
+                    <div class="about-product">
+                        <h2>
+                            Healthy Hair
+                            <span class="thin">Is A Symbol Of Our Beauty</span>
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada
+                            consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus. Praesent
+                            tristique odio ut rutrum pellentesque. Fusce eget molestie est, at rutrum est.
+                        </p>
+                        <p>Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore
+                            lorem sit. Sanctus clita duo justo et tempor.</p>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
 </body>
 
 </html>
