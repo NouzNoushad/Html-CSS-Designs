@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Truecopy Think</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    .custom-navbar {
+        height: 140px;
+        background: #112639;
+    }
+
+    .logo {
+        height: 50px;
+        margin-left: 50px;
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        font-family: DzainTrueCopy;
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        font-weight: bold;
+    }
+
+    .mt-4 {
+        margin-top: 4.5rem !important;
+    }
+
+    .featured-article {
+        position: relative;
+        color: white;
+    }
+
+    .featured-article img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-article .content {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .small-article {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .small-article img {
+        width: 120px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .small-article-title {
+        margin-left: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .small-article-title p {
+        margin: 0;
+    }
+
+    .se2 {
+        padding-top: 30px;
+    }
+
+    .text-uppercase {
+        text-decoration: underline;
+        padding-top: 10px;
+        text-decoration-thickness: 1.5px;
+        text-decoration-color: green;
+    }
+
+    .btn-subscribe {
+        background-color: #75a91e;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-subscribe:hover {
+        background-color: #218838;
+        color: white;
+    }
+
+    .green-line {
+        background-color: #75a91e;
+        height: 10px;
+        width: 100%;
+        margin-top: -2px;
+    }
+</style>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <!-- Logo on the left -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" class="logo">
+                </a>
+
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links aligned to the right -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">HOME <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="single.php">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.php">VIDEOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="series.php">SERIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enter.php">ENTERTAINMENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="politics.php">POLITICS</a>
+                        </li>
+                        <!-- Subscribe Button -->
+                        <li class="nav-item">
+                            <a class="btn btn-subscribe" href="subscribe.php">SUBSCRIBE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="green-line"></div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="featured-article">
+                        <img src="https://via.placeholder.com/750x400" alt="Featured Article Image">
+                        <div class="content">
+                            <p class="text-uppercase">India</p>
+                            <h2>Title of the featured article</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="small-article">
+                        <img src="https://via.placeholder.com/120x100" alt="Small Article 1">
+                        <div class="small-article-title">
+                            <p class="text-uppercase">Art</p>
+                            <p>Title of the small article</p>
+                        </div>
+                    </div>
+
+                    <div class="small-article">
+                        <img src="https://via.placeholder.com/120x100" alt="Small Article 2">
+                        <div class="small-article-title">
+                            <p class="text-uppercase">Science and Technology</p>
+                            <p>Title of the small article</p>
+                        </div>
+                    </div>
+
+                    <div class="small-article">
+                        <img src="https://via.placeholder.com/120x100" alt="Small Article 3">
+                        <div class="small-article-title">
+                            <p class="text-uppercase">Media</p>
+                            <p>Title of the small article</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-link">Show More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row se2">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/350x170" alt="Small Article 3">
+                    <div class="small-article-title">
+                        <p class="text-uppercase">India</p>
+                        <p>Title of the small article</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
