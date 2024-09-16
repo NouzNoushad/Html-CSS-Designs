@@ -32,6 +32,10 @@
         clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 35% 100%);
     }
 
+    .navbar.active .nav-content {
+        right: 0;
+    }
+
     .about-box::before {
         clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 35% 100%);
     }
@@ -40,17 +44,17 @@
 <body>
 
     <!-- Scroll Up Button -->
-    <a href="#home">
+    <a href="#home" class="scroll-btn">
         <div class="fixed bottom-[10px] right-[20px] px-[18px] py-[12px] rounded-[50%] bg-[#90BC79] text-white z-50">
             <i class="fas fa-arrow-up"></i>
         </div>
     </a>
     <!-- Navbar Section -->
-    <nav class="fixed top-0 left-0 bg-[#90BC79] w-full h-[14vh] z-50 transition-all duration-500">
+    <nav class="navbar fixed top-0 left-0 bg-[#90BC79] w-full h-[14vh] z-50 transition-all duration-500">
         <div class="max-w-[1300px] mx-auto px-5 xl:px-0 h-full">
             <div class="flex justify-between items-center h-full">
                 <h1 class="text-[2rem] font-semibold font-poppins text-white">Hairnic</h1>
-                <div class="hidden lg:flex gap-[40px]">
+                <div class="nav-content lg:flex lg:flex-row lg:items-center lg:justify-end lg:relative lg:top-0 lg:right-0 lg:bg-transparent lg:w-full lg:h-full fixed top-0 right-[-100%] h-full w-full bg-[#222831] flex flex-col items-center justify-center text-white gap-[40px] transition-all duration-500 z-10">
                     <ul class="flex items-center gap-[40px]">
                         <li><a href="#home"
                                 class="text-[1rem] font-medium text-white font-open hover:text-white transition-all duration-500">Home</a>
@@ -628,21 +632,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="border-[3px] border-[#f3f3f3] px-[20px] py-[20px] transition-all duration-500 space-y-[10px] group hover:border-transparent hover:shadow-[0_0_35px_#90bc7940]">
+                <div
+                    class="border-[3px] border-[#f3f3f3] px-[20px] py-[20px] transition-all duration-500 space-y-[10px] group hover:border-transparent hover:shadow-[0_0_35px_#90bc7940]">
                     <div class="blog-img">
                         <img src="img/blog-2.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-[10px]">
-                        <h3 class="font-poppins text-[1.2rem] font-[600] cursor-pointer transition-all duration-300 hover:text-[#90BC79]">How to take care of hair naturally</h3>
+                        <h3
+                            class="font-poppins text-[1.2rem] font-[600] cursor-pointer transition-all duration-300 hover:text-[#90BC79]">
+                            How to take care of hair naturally</h3>
                         <div class="text-[#7F7F7F] flex gap-[20px]">
                             <span>
-                                <i class="fa-solid fa-eye text-[0.8rem] mr-[6px]"></i><span class="text-[0.9rem] font-open">9999 Views</span>
+                                <i class="fa-solid fa-eye text-[0.8rem] mr-[6px]"></i><span
+                                    class="text-[0.9rem] font-open">9999 Views</span>
                             </span>
                             <span>
-                                <i class="fa-solid fa-comments text-[0.8rem] mr-[6px]"></i><span class="text-[0.9rem] font-open">9999 Comments</span>
+                                <i class="fa-solid fa-comments text-[0.8rem] mr-[6px]"></i><span
+                                    class="text-[0.9rem] font-open">9999 Comments</span>
                             </span>
                         </div>
-                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada
+                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis aliquet, erat non malesuada
                             consequat.</p>
                         <div class="pt-[10px]">
                             <button
@@ -651,21 +661,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="border-[3px] border-[#f3f3f3] px-[20px] py-[20px] transition-all duration-500 space-y-[10px] group hover:border-transparent hover:shadow-[0_0_35px_#90bc7940]">
+                <div
+                    class="border-[3px] border-[#f3f3f3] px-[20px] py-[20px] transition-all duration-500 space-y-[10px] group hover:border-transparent hover:shadow-[0_0_35px_#90bc7940]">
                     <div class="blog-img">
                         <img src="img/blog-3.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-[10px]">
-                        <h3 class="font-poppins text-[1.2rem] font-[600] cursor-pointer transition-all duration-300 hover:text-[#90BC79]">How to use our natural & organic shampoo</h3>
+                        <h3
+                            class="font-poppins text-[1.2rem] font-[600] cursor-pointer transition-all duration-300 hover:text-[#90BC79]">
+                            How to use our natural & organic shampoo</h3>
                         <div class="text-[#7F7F7F] flex gap-[20px]">
                             <span>
-                                <i class="fa-solid fa-eye text-[0.8rem] mr-[6px]"></i><span class="text-[0.9rem] font-open">9999 Views</span>
+                                <i class="fa-solid fa-eye text-[0.8rem] mr-[6px]"></i><span
+                                    class="text-[0.9rem] font-open">9999 Views</span>
                             </span>
                             <span>
-                                <i class="fa-solid fa-comments text-[0.8rem] mr-[6px]"></i><span class="text-[0.9rem] font-open">9999 Comments</span>
+                                <i class="fa-solid fa-comments text-[0.8rem] mr-[6px]"></i><span
+                                    class="text-[0.9rem] font-open">9999 Comments</span>
                             </span>
                         </div>
-                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada
+                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis aliquet, erat non malesuada
                             consequat.</p>
                         <div class="pt-[10px]">
                             <button
@@ -680,7 +696,9 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section -->
-    <section class="py-[5rem] relative bg-[url(img/bg.png)] bg-[#90BC79] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] bg-design" id="contact">
+    <section
+        class="py-[5rem] relative bg-[url(img/bg.png)] bg-[#90BC79] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#ffffff23] bg-design"
+        id="contact">
         <div class="max-w-[1300px] mx-auto px-5 xl:px-0">
             <div class="text-center max-w-[600px] mx-auto">
                 <h2 class="text-[2rem] md:text-[2.5rem] font-[600] font-poppins text-white leading-[3rem]">
@@ -690,8 +708,10 @@
                     Subscribe now to get 30% discount on any of our products
                 </p>
             </div>
-            <div class="md:max-w-[80%] lg:max-w-[60%] mx-auto mt-[40px] border-[3px] border-[#e0e0e063] px-[20px] py-[12px] rounded-[5px] flex bg-[#e0e0e049]">
-                <input type="email" placeholder="Enter Your Email" class="bg-transparent w-full placeholder:text-[#5f5f5f] placeholder:text-[1rem]">
+            <div
+                class="md:max-w-[80%] lg:max-w-[60%] mx-auto mt-[40px] border-[3px] border-[#e0e0e063] px-[20px] py-[12px] rounded-[5px] flex bg-[#e0e0e049]">
+                <input type="email" placeholder="Enter Your Email"
+                    class="bg-transparent w-full placeholder:text-[#5f5f5f] placeholder:text-[1rem]">
                 <i class="fa-solid fa-paper-plane text-[1.5rem] text-white"></i>
             </div>
         </div>
@@ -705,7 +725,8 @@
                 <div class="mb-[40px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[25px]">
                     <div>
                         <h1 class="font-poppins font-[600] text-[#90BC79] text-[2.5rem] mb-[20px]">Hairnic</h1>
-                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada
+                        <p class="text-[#5f5f5f] font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis aliquet, erat non malesuada
                             consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus.</p>
                     </div>
                     <div>
@@ -728,54 +749,68 @@
                             </div>
                         </div>
                         <div class="flex gap-[3px] mt-[15px]">
-                            <a href="#"><i class="fa-brands fa-twitter text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-twitter text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-facebook text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-instagram text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-linkedin text-[1.1rem] border-[3px] border-[#90BC79] text-[#90BC79] rounded-[50%] px-[8px] py-[6.8px] transition-all duration-500 hover:bg-[#90BC79] hover:text-black"></i></a>
                         </div>
                     </div>
                     <div>
                         <h2 class="font-poppins text-[1.2rem] font-[600] mb-[15px]">Our Products</h2>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Hair Shining Shampoo
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Anti-dandruff Shampoo
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Anti Hair Fall Shampoo
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Hair Growing Shampoo
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Anti smell Shampoo
                         </div>
                     </div>
                     <div>
                         <h2 class="font-poppins text-[1.2rem] font-[600] mb-[15px]">Popular Link</h2>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             About Us
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Contact Us
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Privacy Policy
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Terms & Condition
                         </div>
-                        <div class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
+                        <div
+                            class="mt-[15px] cursor-pointer text-[#5f5f5f] font-open transition-all duration-500 hover:tracking-[1px] hover:text-[#90BC79]">
                             <i class="fa-solid fa-angle-right mr-[6px]"></i>
                             Career
                         </div>
