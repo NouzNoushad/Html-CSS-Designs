@@ -45,16 +45,16 @@
     }
 
     @keyframes pulse-animation {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
+        0% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            opacity: 1;
+        }
 
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
+        100% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+            opacity: 0;
+        }
     }
-}
 </style>
 
 <body>
@@ -317,13 +317,136 @@
                             More</button>
                     </div>
                 </div>
-                <div class="w-full lg:w-[50%] flex items-center justify-center cursor-pointer relative before:absolute before:h-[120px] before:w-[120px] before:top-[50%] before:left-[50%] before:bg-white before:rounded-[50%] features-video">
-                    <div class="h-[140px] w-[140px] bg-white rounded-[50%] relative before:absolute before:h-[60px] before:w-[45px] before:bg-[#88B44E] before:top-[50%] before:left-[55%] before:translate-x-[-50%] before:translate-y-[-50%] video-icon"></div>
+                <div
+                    class="w-full lg:w-[50%] flex items-center justify-center cursor-pointer relative before:absolute before:h-[120px] before:w-[120px] before:top-[50%] before:left-[50%] before:bg-white before:rounded-[50%] features-video">
+                    <div
+                        class="h-[140px] w-[140px] bg-white rounded-[50%] relative before:absolute before:h-[60px] before:w-[45px] before:bg-[#88B44E] before:top-[50%] before:left-[55%] before:translate-x-[-50%] before:translate-y-[-50%] video-icon">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Features Section End -->
+
+    <!-- Store Section -->
+    <section class="py-[5rem]" id="store">
+        <div class="max-w-[1150px] mx-auto px-8 xl:px-0">
+            <div
+                class="relative mb-[3rem] pb-[2rem] before:absolute before:h-[2px] before:w-[50%] before:bottom-0 before:left-0 before:bg-[#88B44E] after:absolute after:h-[28px] after:w-[28px] after:bottom-[-13px] after:bg-black after:border-[10px] after:border-[#F6F6F6] after:rounded-[28px] after:left-[calc(25%-13px)] w-full md:w-[80%] lg:w-[50%] mx-auto text-center mb-[3rem] before:left-[50%] before:translate-x-[-50%] after:left-[calc(50%-13px)]">
+                <h4 class="text-[1.3rem] italic mb-[0.8rem] font-open font-[600] text-[#88B44E]">Online Store</h4>
+                <h1 class="text-[2rem] md:text-[2.3rem] lg:text-[2.5rem] font-[800] font-display leading-[3rem]">Want to
+                    stay healthy? Choose tea taste</h1>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px] mb-[2rem]">
+                <div
+                    class="cursor-pointer relative before:absolute before:top-0 before:left-0 before:h-full before:w-full before:opacity-0 before:bg-[#88b44e50] group before:transition-all before:duration-500 before:hover:opacity-100">
+                    <div
+                        class="flex flex-col items-center justify-center gap-[10px]  font-open px-[20px] transition-all duration-500">
+                        <div class="mb-[1rem]">
+                            <img src="img/store-product-1.jpg" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="text-[#88B44E]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-display text-[1.5rem]">Nature Close tea</h2>
+                        <p class="text-center">Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit
+                            sed</p>
+                        <h3 class="text-[1.5rem] font-display text-[#88B44E] mb-[30px]">$19.00</h3>
+                    </div>
+                    <div
+                        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white bg-[#88B44E]">
+                            More Detail
+                            <i class="fa-solid fa-arrow-right ml-[8px]"></i>
+                        </button>
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white cart-button bg-black">
+                            Add to Cart
+                            <i class="fa-solid fa-cart-shopping ml-[8px]"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="cursor-pointer relative before:absolute before:top-0 before:left-0 before:h-full before:w-full before:opacity-0 before:bg-[#88b44e50] group before:transition-all before:duration-500 before:hover:opacity-100">
+                    <div
+                        class="flex flex-col items-center justify-center gap-[10px]  font-open px-[20px] transition-all duration-500">
+                        <div class="mb-[1rem]">
+                            <img src="img/store-product-2.jpg" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="text-[#88B44E]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-display text-[1.5rem]">Green tea tulsi</h2>
+                        <p class="text-center">Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit
+                            sed</p>
+                        <h3 class="text-[1.5rem] font-display text-[#88B44E] mb-[30px]">$19.00</h3>
+                    </div>
+                    <div
+                        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white bg-[#88B44E]">
+                            More Detail
+                            <i class="fa-solid fa-arrow-right ml-[8px]"></i>
+                        </button>
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white cart-button bg-black">
+                            Add to Cart
+                            <i class="fa-solid fa-cart-shopping ml-[8px]"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="cursor-pointer relative before:absolute before:top-0 before:left-0 before:h-full before:w-full before:opacity-0 before:bg-[#88b44e50] group before:transition-all before:duration-500 before:hover:opacity-100">
+                    <div
+                        class="flex flex-col items-center justify-center gap-[10px]  font-open px-[20px] transition-all duration-500">
+                        <div class="mb-[1rem]">
+                            <img src="img/store-product-3.jpg" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="text-[#88B44E]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-display text-[1.5rem]">Instant tea premix</h2>
+                        <p class="text-center">Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit
+                            sed</p>
+                        <h3 class="text-[1.5rem] font-display text-[#88B44E] mb-[30px]">$19.00</h3>
+                    </div>
+                    <div
+                        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white bg-[#88B44E]">
+                            More Detail
+                            <i class="fa-solid fa-arrow-right ml-[8px]"></i>
+                        </button>
+                        <button
+                            class="block font-open text-[1rem] md:px-[2rem] px-[1.2rem] py-[0.8rem] rounded-[50px] mb-[10px] text-white cart-button bg-black">
+                            Add to Cart
+                            <i class="fa-solid fa-cart-shopping ml-[8px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button
+                    class="font-open text-[1rem] md:px-[2rem] px-[1.5rem] py-[0.8rem] rounded-[50px] bg-[#88B44E] text-white transition-all duration-500 hover:bg-[#a1d35f] hover:text-[#252C30]">
+                    View More Products
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Store Section End -->
 
     <script src="js/script.js"></script>
 </body>
