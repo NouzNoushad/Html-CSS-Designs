@@ -32,6 +32,11 @@
         background-color: #051922;
         z-index: 1000;
     }
+
+    header.active nav .nav-content {
+        right: 0;
+    }
+
 </style>
 
 <body>
@@ -43,7 +48,7 @@
                 <div class="w-[9rem]">
                     <img src="img/logo.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <ul class="hidden lg:flex items-center gap-[30px] font-open">
+                <ul class="nav-content lg:flex lg:flex-row lg:items-center lg:justify-end lg:relative lg:top-0 lg:right-0 lg:bg-transparent lg:w-full lg:h-full fixed top-0 right-[-100%] h-full w-full bg-[#222831] flex flex-col items-center justify-center text-white gap-[40px] transition-all duration-500 z-10 font-open">
                     <li><a href="#home"
                             class="text-[0.9rem] font-[600] text-[#F28123] transition-all duration-500 hover:text-[#F28123]">Home</a>
                     </li>
@@ -62,11 +67,17 @@
                     <li><a href="#shop"
                             class="text-[0.9rem] font-[600] text-white transition-all duration-500 hover:text-[#F28123]">Shop</a>
                     </li>
+                    <div class="cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </ul>
-                <div class="search">
+                <div class="space-x-[20px] flex items-center">
                     <a href="#"><i
-                            class="fas fa-shopping-cart mr-[20px] transition-all duration-500 hover:text-[#F28123]"></i></a>
+                            class="fas fa-shopping-cart transition-all duration-500 hover:text-[#F28123]"></i></a>
                     <a href="#"><i class="fas fa-search transition-all duration-500 hover:text-[#F28123]"></i></a>
+                    <div class="menu-btn relative bg-[#F28123] h-[30px] w-[30px] rounded-[2px]">
+                        <i class="fas fa-bars absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[1rem]"></i>
+                    </div>
                 </div>
             </nav>
         </div>

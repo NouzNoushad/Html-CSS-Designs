@@ -1,4 +1,16 @@
 const header = document.querySelector("header");
+const menuBtn = document.querySelector("header nav .menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+
+menuBtn.addEventListener("click", () => {
+    console.log("clicked");
+    header.classList.add("active");
+})
+
+cancelBtn.onclick = function () {
+    console.log("clicked cancel");
+    header.classList.remove("active");
+}
 
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 20) {
