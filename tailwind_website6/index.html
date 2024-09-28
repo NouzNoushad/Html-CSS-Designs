@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8c6e91ef5e.js" crossorigin="anonymous"></script>
+    <title>Coffo Website</title>
+</head>
+<style>
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
+    .font-poppins {
+        font-family: 'Poppins';
+    }
+</style>
+
+<body>
+    <!-- Header Section -->
+    <nav class="fixed top-0 left-0 w-full h-[12vh] bg-black z-50">
+        <div class="max-w-[1150px] mx-auto px-8 xl:px-0 h-full">
+            <div class="flex items-end justify-between text-white h-full">
+                <a class="navbar-brand py-[15px]" href="index.html"><img src="images/logo.png"></a>
+                <ul class="flex items-center gap-[8px] h-full font-poppins uppercase text-[1.1rem]">
+                    <li class="bg-[#F01C1C] h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#home">Home</a></li>
+                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#about">About</a></li>
+                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#coffee">Coffees</a></li>
+                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#shop">Shop</a></li>
+                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#blog">Blog</a></li>
+                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="h-full py-[15px] flex items-end">
+                    <ul class="flex items-center gap-[30px]">
+                        <li class="font-poppins uppercase text-[1.1rem] hover:text-[#F01C1C] transition-all duration-500"><a href="#"><span class="user_icon"><i class="fa fa-user mr-[10px]"></i></span>Login</a>
+                        </li>
+                        <li class="hover:text-[#F01C1C] transition-all duration-500"><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
