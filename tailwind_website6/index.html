@@ -24,28 +24,86 @@
 
 <body>
     <!-- Header Section -->
-    <nav class="fixed top-0 left-0 w-full h-[12vh] bg-black z-50">
+    <nav class="fixed top-0 left-0 w-full h-[12vh] bg-transparent z-50">
         <div class="max-w-[1150px] mx-auto px-8 xl:px-0 h-full">
             <div class="flex items-end justify-between text-white h-full">
                 <a class="navbar-brand py-[15px]" href="index.html"><img src="images/logo.png"></a>
                 <ul class="hidden lg:flex items-center gap-[8px] h-full font-poppins uppercase text-[1.1rem]">
-                    <li class="bg-[#F01C1C] h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#home">Home</a></li>
-                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#about">About</a></li>
-                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#coffee">Coffees</a></li>
-                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#shop">Shop</a></li>
-                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#blog">Blog</a></li>
-                    <li class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500"><a href="#contact">Contact</a></li>
+                    <li
+                        class="bg-[#F01C1C] h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li
+                        class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#about">About</a>
+                    </li>
+                    <li
+                        class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#coffee">Coffees</a>
+                    </li>
+                    <li
+                        class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li
+                        class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li
+                        class="bg-transparent h-full inline-block px-[20px] py-[15px] flex items-end hover:bg-[#F01C1C] transition-all duration-500">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
                 <div class="h-full py-[15px] hidden lg:flex items-end">
                     <ul class="flex items-center gap-[30px]">
-                        <li class="font-poppins uppercase text-[1.1rem] hover:text-[#F01C1C] transition-all duration-500"><a href="#"><span class="user_icon"><i class="fa fa-user mr-[10px]"></i></span>Login</a>
+                        <li
+                            class="font-poppins uppercase text-[1.1rem] hover:text-[#F01C1C] transition-all duration-500">
+                            <a href="#"><span class="user_icon"><i class="fa fa-user mr-[10px]"></i></span>Login</a>
                         </li>
-                        <li class="hover:text-[#F01C1C] transition-all duration-500"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="hover:text-[#F01C1C] transition-all duration-500"><a href="#"><i
+                                    class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Home Section -->
+    <section id="home"
+        class="relative bg-[url('images/banner-bg.png')] bg-cover bg-no-repeat bg-center w-full h-[100vh]">
+        <div class="max-w-[1150px] mx-auto px-8 xl:px-0 h-full">
+            <div class="swiper tSwiper text-white h-full font-poppins">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col items-start justify-center gap-[30px]">
+                        <h1 class="text-[5rem] font-[800] leading-[5rem] max-w-[100px]">Coffee Shop</h1>
+                        <p>more-or-less normal distribution of letters, as opposed to using</p>
+                        <div class="space-x-[5px]">
+                            <button class="rounded-[5px] bg-[#F01C1C] px-[20px] py-[10px] uppercase text-[1.2rem]">About Us</button>
+                            <button class="rounded-[5px] bg-white px-[20px] py-[10px] text-black uppercase text-[1.2rem] transition-all duration-500 hover:bg-[#F01C1C] hover:text-white">Call Now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-start justify-center gap-[30px]">
+                        <h1 class="text-[5rem] font-[800] leading-[5rem] max-w-[100px]">Coffee Shop</h1>
+                        <p>more-or-less normal distribution of letters, as opposed to using</p>
+                        <div class="space-x-[5px]">
+                            <button class="rounded-[5px] bg-[#F01C1C] px-[20px] py-[10px] uppercase text-[1.2rem]">About Us</button>
+                            <button class="rounded-[5px] bg-white px-[20px] py-[10px] text-black uppercase text-[1.2rem] transition-all duration-500 hover:bg-[#F01C1C] hover:text-white">Call Now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-start justify-center gap-[30px]">
+                        <h1 class="text-[5rem] font-[800] leading-[5rem] max-w-[100px]">Coffee Shop</h1>
+                        <p>more-or-less normal distribution of letters, as opposed to using</p>
+                        <div class="space-x-[5px]">
+                            <button class="rounded-[5px] bg-[#F01C1C] px-[20px] py-[10px] uppercase text-[1.2rem]">About Us</button>
+                            <button class="rounded-[5px] bg-white px-[20px] py-[10px] text-black uppercase text-[1.2rem] transition-all duration-500 hover:bg-[#F01C1C] hover:text-white">Call Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
