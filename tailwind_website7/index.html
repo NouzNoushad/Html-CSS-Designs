@@ -12,7 +12,29 @@
     <script src="https://kit.fontawesome.com/8c6e91ef5e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+<style>
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
+    .font-poppins {
+        font-family: 'Poppins';
+    }
+</style>
 <body>
-    
+    <nav class="fixed top-0 left-0 h-[15vh] w-full bg-white">
+        <div class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full">
+            <img src="images/klassy-logo.png">
+            <ul class="hidden lg:flex items-center gap-[30px] font-poppins font-[500] tracking-[0.5px]">
+                <li class="text-[#FB5849] transition-all duration-500"><a href="#home">Home</a></li>
+                <li class="hover:text-[#FB5849] transition-all duration-500"><a href="#about">About</a></li>
+                <li class="hover:text-[#FB5849] transition-all duration-500"><a href="#menu">Menu</a></li>
+                <li class="hover:text-[#FB5849] transition-all duration-500"><a href="#chefs">Chefs</a></li>
+                <li class="hover:text-[#FB5849] transition-all duration-500"><a href="#features">Features</a></li>
+                <li class="hover:text-[#FB5849] transition-all duration-500"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 </body>
 </html>
