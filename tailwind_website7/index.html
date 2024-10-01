@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,9 +23,15 @@
     .font-poppins {
         font-family: 'Poppins';
     }
+
+    .font-dancing {
+        font-family: 'Dancing Script';
+    }
 </style>
+
 <body>
-    <nav class="fixed top-0 left-0 h-[15vh] w-full bg-white">
+    <!-- Nav Section -->
+    <nav class="fixed top-0 left-0 h-[15vh] w-full bg-white z-50">
         <div class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full">
             <img src="images/klassy-logo.png">
             <ul class="hidden lg:flex items-center gap-[30px] font-poppins font-[500] tracking-[0.5px]">
@@ -36,5 +44,40 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Home Section -->
+    <section class="h-[100vh] bg-blue-100 mt-[15vh]">
+        <div class="flex lg:flex-row flex-col h-full">
+            <div class="lg:w-[30%] h-full bg-black relative">
+                <img src="images/top-left-bg.jpg" alt="" class="h-full w-full bg-no-repeat">
+                <div
+                    class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center text-white gap-[8px]">
+                    <h2 class="text-[3.5rem] font-dancing font-bold leading-[4rem]">KlassyCafe</h2>
+                    <h5 class="font-poppins uppercase font-[600] tracking-[1px]">The Best Experience</h5>
+                    <button
+                        class="mt-[10px] bg-white font-poppins rounded-[2px] px-[30px] py-[10px] text-[#FB5849] text-[0.8rem] font-[600]">Make
+                        A Reservation</button>
+                </div>
+            </div>
+            <div class="lg:w-[70%] h-full bg-red-100">
+                <div class="swiper tSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide h-[100vh]">
+                            <img src="images/slide-01.jpg" alt="" class="w-full h-full bg-cover">
+                        </div>
+                        <div class="swiper-slide h-[100vh]">
+                            <img src="images/slide-02.jpg" alt="" class="w-full h-full bg-cover">
+                        </div>
+                        <div class="swiper-slide h-[100vh]">
+                            <img src="images/slide-03.jpg" alt="" class="w-full h-full bg-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
