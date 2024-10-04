@@ -36,6 +36,12 @@
     .cut-bg {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
+
+    #tab-1:checked~.tabs .t1,
+    #tab-2:checked~.tabs .t2,
+    #tab-3:checked~.tabs .t3 {
+        color: #FB5849;
+    }
 </style>
 
 <body>
@@ -215,14 +221,14 @@
     <!-- Chefs Section -->
     <section id="chefs" class="py-[5rem]">
         <div class="max-w-[1150px] mx-auto px-6 xl:px-0">
-            <div class="text-center">
+            <div class="text-center mb-[4rem]">
                 <h4 class="text-[#FB5849] uppercase tracking-[1px] font-[500] text-[0.9rem] ">
                     Our Chefs</h4>
                 <h1
-                    class="mt-[15px] font-[800] sm:text-[2rem] text-[1.8rem] leading-[2.5rem] text-[#2A2A2A] sm:w-[400px] mx-auto">
+                    class="mt-[15px] font-[800] sm:text-[2rem] text-[1.8rem] leading-[2.5rem] text-[#2A2A2A] sm:w-[350px] mx-auto">
                     We offer the best ingredients for you</h1>
             </div>
-            <div class="mt-[2rem] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px]">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px]">
                 <div
                     class="border border-[#AFAFAF] rounded-[4px] px-[5px] py-[5px] transition-all duration-500 group hover:border-[#FB5849]">
                     <div
@@ -391,8 +397,48 @@
                             <input type="number" placeholder="Time"
                                 class="lg:w-[50%] w-full border rounded-[5px] px-[20px] py-[12px] font-poppins placeholder:text-black text-[0.9rem]">
                         </div>
-                        <textarea name="" id="" placeholder="Message" rows="5" class="w-full border rounded-[5px] px-[20px] py-[12px] font-poppins placeholder:text-black text-[0.9rem]"></textarea>
-                        <button class="w-full bg-[#FB5849] font-poppins rounded-[5px] px-[30px] py-[13px] text-white text-[0.8rem] font-[600]">Make A Reservation</button>
+                        <textarea name="" id="" placeholder="Message" rows="5"
+                            class="w-full border rounded-[5px] px-[20px] py-[12px] font-poppins placeholder:text-black text-[0.9rem]"></textarea>
+                        <button
+                            class="w-full bg-[#FB5849] font-poppins rounded-[5px] px-[30px] py-[13px] text-white text-[0.8rem] font-[600]">Make
+                            A Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-[5rem]">
+        <div class="max-w-[1150px] mx-auto px-6 xl:px-0">
+            <div class="text-center mb-[4rem]">
+                <h4 class="text-[#FB5849] uppercase tracking-[1px] font-[500] text-[0.9rem] ">
+                    Klassy Week</h4>
+                <h1
+                    class="mt-[15px] font-[800] sm:text-[2rem] text-[1.8rem] leading-[2.5rem] text-[#2A2A2A] sm:w-[350px] mx-auto">
+                    This Week’s Special Meal Offers</h1>
+            </div>
+            <div class="wrapper flex flex-col items-center justify-center">
+                <input type="radio" class="group hidden" id="tab-1" name="tabs" checked>
+                <input type="radio" class="group hidden" id="tab-2" name="tabs">
+                <input type="radio" class="group hidden" id="tab-3" name="tabs">
+                <div class="tabs flex flex-row items-center gap-[20px]">
+                    <label for="tab-1" class="t1">
+                        <img src="images/tab-icon-01.png" alt="">
+                        <h4 class="font-poppins font-[600] text-center mt-[10px]">Breakfast</h4>
+                    </label>
+                    <label for="tab-2" class="t2">
+                        <img src="images/tab-icon-02.png" alt="">
+                        <h4 class="font-poppins font-[600] text-center mt-[10px]">Lunch</h4>
+                    </label>
+                    <label for="tab-3" class="t3">
+                        <img src="images/tab-icon-03.png" alt="">
+                        <h4 class="font-poppins font-[600] text-center mt-[10px]">Dinner</h4>
+                    </label>
+                </div>
+                <div class="">
+                    <div class="card">
+
                     </div>
                 </div>
             </div>
