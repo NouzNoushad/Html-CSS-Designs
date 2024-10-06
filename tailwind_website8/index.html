@@ -37,26 +37,89 @@
     .font-rajdhani {
         font-family: 'Rajdhani', sans-serif;
     }
+
+    .swiper-navBtn::after,
+    .swiper-navBtn::before {
+        font-size: 1.2rem;
+    }
 </style>
 
 <body>
     <!-- Nav Section -->
-    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-white z-50">
+    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-transparent z-50">
         <div class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full">
             <img src="images/logo.png">
             <ul class="hidden lg:flex items-center gap-[30px] font-[500] tracking-[0.5px]">
-                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#home">Home</a></li>
-                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#services">Services</a></li>
-                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#about">About</a></li>
-                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#shop">Shop</a></li>
-                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#contact">Contact</a></li>
+                <li
+                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                    <a href="#home">Home</a></li>
+                <li
+                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                    <a href="#services">Services</a></li>
+                <li
+                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                    <a href="#about">About</a></li>
+                <li
+                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                    <a href="#shop">Shop</a></li>
+                <li
+                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                    <a href="#contact">Contact</a></li>
             </ul>
-            <ul class="flex flex-row items-center gap-[20px]">
+            <ul class="hidden lg:flex flex-row items-center gap-[20px]">
                 <li><a href="#"><img src="images/search-icon.png"></a></li>
-                <li><a href="#" class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">LOGIN</a></li>
+                <li><a href="#"
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">LOGIN</a>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <!-- Home Section -->
+    <section id="home"
+        class="fixed top-0 left-0 bg-[url('images/banner-bg.png')] lg:h-[100vh] md:h-[90vh] sm:h-[80vh] h-[70vh] w-full bg-cover bg-no-repeat">
+        <div class="px-6 pb-[3rem] pt-[7rem]  h-full font-poppins">
+            <div class="swiper tSwiper h-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col items-center justify-between h-full">
+                        <div class="text-center md:w-[550px] w-full mx-auto">
+                            <h1 class="lg:text-[6rem] md:text-[4.5rem] sm:text-[3rem] text-[2.5rem]">FURNITURE</h1>
+                            <p class="font-[300]">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered
+                                alteration in some</p>
+                        </div>
+                        <button class="bg-[#FFB607] rounded-[5px] text-[0.9rem] md:text-[1.1rem] px-[1rem] md:px-[2rem] py-[0.7rem] uppercase text-white transition-all duration-500 hover:bg-black hover:text-white">Contact
+                            Us</button>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-center justify-between h-full">
+                        <div class="text-center md:w-[550px] w-full mx-auto">
+                            <h1 class="lg:text-[6rem] md:text-[4.5rem] sm:text-[3rem] text-[2.5rem]">FURNITURE</h1>
+                            <p class="font-[300]">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered
+                                alteration in some</p>
+                        </div>
+                        <button class="bg-[#FFB607] rounded-[5px] text-[0.9rem] md:text-[1.1rem] px-[1rem] md:px-[2rem] py-[0.7rem] uppercase text-white transition-all duration-500 hover:bg-black hover:text-white">Contact
+                            Us</button>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-center justify-between h-full">
+                        <div class="text-center md:w-[550px] w-full mx-auto">
+                            <h1 class="lg:text-[6rem] md:text-[4.5rem] sm:text-[3rem] text-[2.5rem]">FURNITURE</h1>
+                            <p class="font-[300]">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered
+                                alteration in some</p>
+                        </div>
+                        <button class="bg-[#FFB607] rounded-[5px] text-[0.9rem] md:text-[1.1rem] px-[1rem] md:px-[2rem] py-[0.7rem] uppercase text-white transition-all duration-500 hover:bg-black hover:text-white">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <div class="hidden md:flex swiper-button-next h-[3rem] w-[3rem] bg-black rounded-[50%] swiper-navBtn text-white"></div>
+                <div class="hidden md:flex swiper-button-prev h-[3rem] w-[3rem] bg-black rounded-[50%] swiper-navBtn text-white"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
