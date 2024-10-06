@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +24,12 @@
         color: white;
     }
 
+    @font-face {
+        font-family: "Righteous";
+        src: url("../fonts/BalooChettan-Regular.ttf");
+        src: url("../fonts/BalooChettan-Regular.ttf");
+    }
+
     .font-poppins {
         font-family: 'Poppins';
     }
@@ -31,7 +38,25 @@
         font-family: 'Rajdhani', sans-serif;
     }
 </style>
+
 <body>
-    
+    <!-- Nav Section -->
+    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-white z-50">
+        <div class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full">
+            <img src="images/logo.png">
+            <ul class="hidden lg:flex items-center gap-[30px] font-[500] tracking-[0.5px]">
+                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#home">Home</a></li>
+                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#services">Services</a></li>
+                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#about">About</a></li>
+                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#shop">Shop</a></li>
+                <li class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]"><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="flex flex-row items-center gap-[20px]">
+                <li><a href="#"><img src="images/search-icon.png"></a></li>
+                <li><a href="#" class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
 </body>
+
 </html>
