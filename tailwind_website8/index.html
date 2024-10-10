@@ -48,42 +48,68 @@
     .swiper-navBtn::before {
         font-size: 1.2rem;
     }
+
+    nav.active .nav-links {
+        right: 0;
+    }
 </style>
 
 <body>
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scroll-btn transition-all duration-500">
+        <div class="fixed bottom-[10px] right-[20px] h-[45px] w-[45px] rounded-[5px] bg-black text-white z-50">
+            <i class="fas fa-arrow-up absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"></i>
+        </div>
+    </a>
+
     <!-- Nav Section -->
-    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-transparent z-50">
+    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-transparent z-50 transition-all duration-500">
         <div
             class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full transition-all duration-500">
             <img src="images/logo.png">
-            <ul class="hidden lg:flex items-center gap-[30px] font-[500] tracking-[0.5px]">
-                <li
-                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
-                    <a href="#home">Home</a>
-                </li>
-                <li
-                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
-                    <a href="#services">Services</a>
-                </li>
-                <li
-                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
-                    <a href="#about">About</a>
-                </li>
-                <li
-                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
-                    <a href="#shop">Shop</a>
-                </li>
-                <li
-                    class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <ul class="hidden lg:flex flex-row items-center gap-[20px]">
-                <li><a href="#"><img src="images/search-icon.png"></a></li>
-                <li><a href="#"
-                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">LOGIN</a>
-                </li>
-            </ul>
+            <div
+                class="gap-[30px] lg:gap-[60px] font-[500] tracking-[0.5px] nav-links fixed top-0 right-[-100%] h-full w-full bg-white flex lg:flex-row flex-col items-center justify-center lg:justify-end font-poppins uppercase text-[1.1rem] lg:relative lg:top-0 lg:right-0 lg:bg-transparent z-50 transition-all duration-500">
+                <ul class="flex lg:flex-row flex-col items-center justify-center gap-[30px]">
+                    <li
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                        <a href="#about">About</a>
+                    </li>
+                    <li
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li
+                        class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <div class="cancel-btn inline-block lg:hidden absolute top-[15px] right-[20px]">
+                        <div class="relative bg-white rounded-[5px] h-[45px] w-[45px]">
+                            <i
+                                class="fas fa-times absolute top-[50%] left-[50%] text-black text-[1.3rem] translate-x-[-50%] translate-y-[-50%]"></i>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="flex flex-col lg:flex-row items-center gap-[20px]">
+                    <li><a href="#"><img src="images/search-icon.png"></a></li>
+                    <li><a href="#"
+                            class="hover:text-[#FFB607] transition-all duration-500 font-poppins uppercase text-[1.1rem] font-[400]">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-btn inline-block lg:hidden absolute top-[50%] right-[20px] translate-y-[-50%]">
+                <div class="relative bg-white rounded-[5px] h-[45px] w-[45px]">
+                    <i
+                        class="fas fa-bars absolute top-[50%] left-[50%] text-black text-[1.3rem] translate-x-[-50%] translate-y-[-50%]"></i>
+                </div>
+            </div>
         </div>
     </nav>
 
