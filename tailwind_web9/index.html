@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c6e91ef5e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
+    .font-roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<body>
+    <nav class="fixed top-0 left-0 h-[12vh] w-full bg-transparent z-50 transition-all duration-500">
+        <div
+            class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full font-roboto text-[#616060]">
+            <h2 class="text-[1.5rem] font-[500] cursor-pointer">Furn.</h2>
+            <ul
+                class="gap-[30px] tracking-[0.5px] nav-links fixed top-0 right-[-100%] h-full w-full bg-white flex lg:flex-row flex-col items-center justify-center lg:relative lg:top-0 lg:right-0 lg:bg-transparent z-50 transition-all duration-500">
+                <li><a href="#home" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Home</a></li>
+                <li><a href="#arrival" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">New
+                        Arrival</a></li>
+                <li><a href="#features" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Features</a>
+                </li>
+                <li><a href="#blog" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Blog</a></li>
+                <li><a href="#contact" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Contact</a>
+                </li>
+            </ul>
+            <div class="flex flex-row items-center gap-[20px]">
+                <i class="fa fa-search transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
+                <i class="fa-solid fa-gear transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
+                <i
+                    class="fa-solid fa-cart-shopping transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-[#F8F9FD] md:h-[100vh] h-full">
+        <div class="max-w-[1150px] mx-auto px-6 xl:px-0 pt-[12vh] h-full">
+            <div class="swiper tSwiper h-full pb-[5rem] pt-[2rem] md:pb-0 md:pt-0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col md:flex-row items-center justify-between gap-[40px] my-auto">
+                        <div class="font-roboto space-y-[20px] w-full md:w-[60%]">
+                            <h5 class="text-[1.6rem] text-[#998D80]">Great Design Collection</h5>
+                            <h2 class="text-[2.5rem] capitalize leading-[3rem] text-[#616060]">mapple wood accent chair</h2>
+                            <p class="capitalize text-[#A8A6A5]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut
+                                labore et dolore magna
+                                aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <div class="relative">
+                                <span class="ml-[35px] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:h-[1.2px] before:w-[25px] before:bg-black text-[#616060]">$ 399.00</span>
+                                <span class="ml-[8px] text-[#A8A6A5] line-through">$ 499.00</span>
+                            </div>
+                            <div>
+                                <button class="border border-[#E99C2E] bg-[#E99C2E] text-white px-[20px] py-[16px] w-[160px] transition-all duration-500 hover:text-[#E99C2E] hover:bg-transparent">Add to Cart</button>
+                                <button class="border border-transparent bg-transparent text-[#E99C2E] px-[20px] py-[16px] w-[160px] transition-all duration-500 hover:border-[#E99C2E]">More Info</button>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[40%]">
+                            <img src="images/slider/slider1.png" alt="" class="w-full h-full bg-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
