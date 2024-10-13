@@ -22,12 +22,29 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    nav.sticky {
+        height: 11vh;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    nav.active .nav-links {
+        right: 0
+    }
+
     .cut-image {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 </style>
 
 <body>
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scroll-btn transition-all duration-500">
+        <div class="fixed bottom-[10px] right-[20px] h-[45px] w-[45px] rounded-[5px] bg-[#E99C2E] text-white z-50">
+            <i class="fas fa-arrow-up absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"></i>
+        </div>
+    </a>
+
     <nav class="fixed top-0 left-0 h-[12vh] w-full bg-transparent z-50 transition-all duration-500">
         <div
             class="max-w-[1150px] mx-auto px-6 xl:px-0 flex items-center justify-between h-full font-roboto text-[#616060]">
@@ -42,12 +59,24 @@
                 <li><a href="#blog" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Blog</a></li>
                 <li><a href="#contact" class="font-[500] transition-all duration-500 hover:text-[#E99C2E]">Contact</a>
                 </li>
+                <div class="cancel-btn inline-block lg:hidden absolute top-[15px] right-[20px]">
+                    <div class="relative bg-white rounded-[5px] h-[45px] w-[45px]">
+                        <i
+                            class="fas fa-times absolute top-[50%] left-[50%] text-black text-[1.3rem] translate-x-[-50%] translate-y-[-50%]"></i>
+                    </div>
+                </div>
             </ul>
-            <div class="flex flex-row items-center gap-[20px]">
+            <div class="flex flex-row items-center gap-[20px] lg:mr-0 mr-[3.5rem]">
                 <i class="fa fa-search transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
                 <i class="fa-solid fa-gear transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
                 <i
                     class="fa-solid fa-cart-shopping transition-all duration-500 hover:text-[#E99C2E] cursor-pointer"></i>
+            </div>
+            <div class="menu-btn inline-block lg:hidden absolute top-[50%] right-[20px] translate-y-[-50%]">
+                <div class="relative bg-white rounded-[5px] h-[45px] w-[45px]">
+                    <i
+                        class="fas fa-bars absolute top-[50%] left-[50%] text-black text-[1.3rem] translate-x-[-50%] translate-y-[-50%]"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -464,11 +493,11 @@
     <!-- Blog Section -->
     <section id="blog" class="py-[5rem]">
         <div class="max-w-[1150px] mx-auto px-6 xl:px-0 font-roboto">
-            <h2 class="text-center text-[1.8rem] font-[500] text-[#616060]">Featured Products</h2>
+            <h2 class="text-center text-[1.8rem] font-[500] text-[#616060]">Latest Blog</h2>
             <div class="mt-[3rem] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
                 <div class="sm:w-[300px] sm:mx-auto lg:w-full w-full space-y-[10px] group">
                     <div
-                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-50">
+                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-20">
                         <img src="images/blog/b1.jpg" alt=""
                             class="mb-[1rem] w-full h-full bg-cover transition-all duration-500 transform scale-none hover:scale-110">
                     </div>
@@ -481,7 +510,7 @@
                 </div>
                 <div class="sm:w-[300px] sm:mx-auto lg:w-full w-full space-y-[10px] group">
                     <div
-                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-50">
+                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-20">
                         <img src="images/blog/b2.jpg" alt=""
                             class="mb-[1rem] w-full h-full bg-cover transition-all duration-500 transform scale-none hover:scale-110">
                     </div>
@@ -495,7 +524,7 @@
                 </div>
                 <div class="sm:w-[300px] sm:mx-auto lg:w-full w-full space-y-[10px] group">
                     <div
-                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-50">
+                        class="relative cut-image before:transition-all before:duration-500 before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:h-full before:w-full before:bg-[#3C4447] before:opacity-[0.3] cursor-pointer before:scale-0 before:tranform before:group-hover:scale-100 before:z-10 z-20">
                         <img src="images/blog/b3.jpg" alt=""
                             class="mb-[1rem] w-full h-full bg-cover transition-all duration-500 transform scale-none group-hover:scale-110">
                     </div>
