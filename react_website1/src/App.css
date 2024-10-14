@@ -1,0 +1,16 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.font-open {
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-poppins {
+    font-family: "Poppins";
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
