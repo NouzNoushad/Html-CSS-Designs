@@ -1,4 +1,5 @@
 import './App.css'
+import FactsSection from './components/Facts'
 import HomeSection from './components/Home'
 import NavSection from './components/Nav'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <NavSection/>
       <HomeSection/>
+      <FactsSection/>
     </>
   )
 }
