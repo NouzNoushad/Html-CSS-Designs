@@ -14,3 +14,10 @@ body {
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
+
+#tab-1:checked~.tabs .t1,
+#tab-2:checked~.tabs .t2,
+#tab-3:checked~.tabs .t3 {
+    color: #65B530;
+    border-color: #65B530;
+}
