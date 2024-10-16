@@ -3,6 +3,7 @@ import AboutSection from './components/About'
 import FactsSection from './components/Facts'
 import HomeSection from './components/Home'
 import NavSection from './components/Nav'
+import ServicesSection from './components/Services'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <HomeSection/>
       <FactsSection/>
       <AboutSection/>
+      <ServicesSection/>
     </>
   )
 }
