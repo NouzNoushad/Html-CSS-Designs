@@ -8,6 +8,7 @@ import ProjectsSection from './components/Projects'
 import QuoteSection from './components/Quote'
 import ServicesSection from './components/Services'
 import TeamSection from './components/Team'
+import TestimonialsSection from './components/Testimonials'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <ProjectsSection />
             <QuoteSection />
             <TeamSection/>
+            <TestimonialsSection/>
         </>
     )
 }
