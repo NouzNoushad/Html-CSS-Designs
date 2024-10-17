@@ -7,6 +7,7 @@ import NavSection from './components/Nav'
 import ProjectsSection from './components/Projects'
 import QuoteSection from './components/Quote'
 import ServicesSection from './components/Services'
+import TeamSection from './components/Team'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <FeatureSection />
             <ProjectsSection />
             <QuoteSection />
+            <TeamSection/>
         </>
     )
 }
