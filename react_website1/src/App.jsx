@@ -5,6 +5,7 @@ import FeatureSection from './components/Feature'
 import HomeSection from './components/Home'
 import NavSection from './components/Nav'
 import ProjectsSection from './components/Projects'
+import QuoteSection from './components/Quote'
 import ServicesSection from './components/Services'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <ServicesSection />
             <FeatureSection />
             <ProjectsSection />
+            <QuoteSection />
         </>
     )
 }
