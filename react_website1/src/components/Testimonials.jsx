@@ -5,7 +5,7 @@ import 'swiper/css/autoplay';
 
 export default function TestimonialsSection() {
   return (
-    <section className='py-[5rem]'>
+    <section className='pb-[5rem]'>
           <div className="max-w-[1150px] mx-auto px-5 xl:px-0">
               <h1 className='text-center pt-[0.6rem] font-roboto font-[800] text-[2.2rem] md:text-[2.5rem] lg:text-[3rem] relative before:absolute before:top-0 before:left-[50%] before:translate-x-[-50%] before:h-[2px] before:w-[60px] before:bg-[#65B530]'>Testimonials</h1>
               <div className="mt-[3rem]">
