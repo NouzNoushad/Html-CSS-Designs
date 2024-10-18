@@ -15,6 +15,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+nav.active .nav-links {
+    right: 0
+}
+
 #tab-1:checked~.tabs .t1,
 #tab-2:checked~.tabs .t2,
 #tab-3:checked~.tabs .t3 {
