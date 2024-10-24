@@ -6,3 +6,8 @@ body {
 .font-cairo {
     font-family: "Cairo", sans-serif;
 }
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+    background: red;
+}
