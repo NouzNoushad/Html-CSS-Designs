@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavSection from './components/Nav'
 import HomeSection from './components/Home'
+import CategoriesSection from './components/Categories'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <div className='font-cairo'>
       <NavSection/>
       <HomeSection/>
+      <CategoriesSection/>
     </div>
   )
 }
