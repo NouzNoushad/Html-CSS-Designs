@@ -6,18 +6,20 @@ import NavSection from './components/Nav'
 import HomeSection from './components/Home'
 import CategoriesSection from './components/Categories'
 import FeaturedSection from './components/Featured'
+import BannerSection from './components/Banner'
+import LatestProducts from './components/Latest'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className='font-cairo'>
-      <NavSection/>
-      <HomeSection/>
-      <CategoriesSection/>
-      <FeaturedSection/>
-    </div>
-  )
+    return (
+        <div className='font-cairo'>
+            <NavSection />
+            <HomeSection />
+            <CategoriesSection />
+            <FeaturedSection />
+            <BannerSection />
+            <LatestProducts/>
+        </div>
+    )
 }
 
 export default App
