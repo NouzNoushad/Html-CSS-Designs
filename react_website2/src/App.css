@@ -11,3 +11,10 @@ body {
 .scrollbar::-webkit-scrollbar-thumb {
     background: red;
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: black;
+}
