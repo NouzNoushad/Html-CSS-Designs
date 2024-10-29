@@ -5,6 +5,7 @@ import './App.css'
 import NavSection from './components/Nav'
 import HomeSection from './components/Home'
 import CategoriesSection from './components/Categories'
+import FeaturedSection from './components/Featured'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <NavSection/>
       <HomeSection/>
       <CategoriesSection/>
+      <FeaturedSection/>
     </div>
   )
 }
