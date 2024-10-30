@@ -9,6 +9,7 @@ import FeaturedSection from './components/Featured'
 import BannerSection from './components/Banner'
 import LatestProducts from './components/Latest'
 import BlogSection from './components/Blog'
+import FooterSection from './components/Footer'
 
 function App() {
     return (
@@ -18,8 +19,9 @@ function App() {
             <CategoriesSection />
             <FeaturedSection />
             <BannerSection />
-            <LatestProducts/>
-            <BlogSection/>
+            <LatestProducts />
+            <BlogSection />
+            <FooterSection />
         </div>
     )
 }

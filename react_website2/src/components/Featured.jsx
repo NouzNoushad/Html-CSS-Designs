@@ -5,7 +5,7 @@ export default function FeaturedSection() {
     const featuredProducts = ['All', 'Oranges', 'Fresh Meat', 'Vegetables', 'Fastfood']
 
     return (
-        <section className='py-[5rem]'>
+        <section className='py-[4rem]'>
             <div className="max-w-[1150px] mx-auto xl:px-0 px-5">
                 <div className="flex flex-col items-center gap-[30px]">
                     <h1 className='mb-[1rem] font-[800] text-[2.2rem] relative after:absolute after:w-[80px] after:h-[4px] after:left-[50%] after:translate-x-[-50%] after:top-[55px] after:bg-[#7FAD39]'>Featured Product</h1>
