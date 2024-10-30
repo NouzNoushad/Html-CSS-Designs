@@ -8,6 +8,7 @@ import CategoriesSection from './components/Categories'
 import FeaturedSection from './components/Featured'
 import BannerSection from './components/Banner'
 import LatestProducts from './components/Latest'
+import BlogSection from './components/Blog'
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <FeaturedSection />
             <BannerSection />
             <LatestProducts/>
+            <BlogSection/>
         </div>
     )
 }
