@@ -6,16 +6,23 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import AddUser from './pages/AddUser.jsx';
+import PageNotFound from './pages/PageNotFound.jsx';
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App/>,
+        element: <App />,
+        errorElement: <PageNotFound/>,
+    },
+    {
+        path: "/add_user",
+        element: <AddUser />,
     },
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+    <StrictMode>
+        <RouterProvider router={router} />
+    </StrictMode>,
 )

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function AboutSection() {
     return (
         <section className='h-auto lg:h-[calc(100vh-12vh)] bg-[#F5F5F5]'>

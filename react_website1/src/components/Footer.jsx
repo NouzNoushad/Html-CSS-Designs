@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function FooterSection() {
   return (
       <footer className="bg-[#161616]">

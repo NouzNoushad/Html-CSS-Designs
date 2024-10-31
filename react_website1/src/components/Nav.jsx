@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from 'react'
 
 export default function NavSection() {
     const [stickyClass, setStickyClass] = useState('relative');
@@ -45,13 +46,13 @@ export default function NavSection() {
                             <div className="flex flex-row items-center gap-[20px]">
                                 <span className='flex flex-row items-center'>
                                     <a href='#' className="h-[32px] w-[32px] bg-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] text-white">
-                                        <i class="fa-solid fa-location-dot"></i>
+                                        <i className="fa-solid fa-location-dot"></i>
                                     </a>
                                     123 Street, New York, USA
                                 </span>
                                 <span className='flex flex-row items-center'>
                                     <a href='#' className="h-[32px] w-[32px] bg-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] text-white">
-                                        <i class="fa-solid fa-envelope"></i>
+                                        <i className="fa-solid fa-envelope"></i>
                                     </a>
                                     info@example.com
                                 </span>
@@ -59,13 +60,13 @@ export default function NavSection() {
                             <div className="flex flex-row items-center gap-[20px]">
                                 <span className='flex flex-row items-center'>
                                     <a href='#' className="h-[32px] w-[32px] bg-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] text-white">
-                                        <i class="fa-solid fa-phone"></i>
+                                        <i className="fa-solid fa-phone"></i>
                                     </a>
                                     +012 345 6789
                                 </span>
                                 <span className='flex flex-row items-center'>
                                     <a href='#' className="h-[32px] w-[32px] bg-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] text-white">
-                                        <i class="fa-solid fa-clock"></i>
+                                        <i className="fa-solid fa-clock"></i>
                                     </a>
                                     Mon - Fri : 9AM - 9PM
                                 </span>
@@ -87,10 +88,10 @@ export default function NavSection() {
                                     <li><a href="#contact" className='transition-all duration-500 hover:text-[#65B530]'>Contact</a></li>
                                 </ul>
                                 <div className="flex flex-row items-center">
-                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i className="fab fa-twitter"></i></a>
+                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i className="fab fa-linkedin-in"></i></a>
+                                    <a href="#" className="h-[35px] w-[35px] bg-[#F5F5F5] text-[#65B530] rounded-[50%] flex items-center justify-center mr-[10px] transition-all duration-500 hover:text-white hover:bg-[#65B530]"><i className="fab fa-instagram"></i></a>
                                 </div>
                                 <div className="cancel-btn inline-block lg:hidden absolute top-[15px] right-[20px]">
                                     <div className="relative bg-white rounded-[5px] h-[45px] w-[45px]">
