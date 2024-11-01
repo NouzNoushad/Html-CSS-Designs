@@ -1,4 +1,3 @@
-import { Form } from "react-router-dom";
 import NavSection from "../components/Nav";
 import { useRef, useState } from "react";
 import axios from "axios";
@@ -56,7 +55,7 @@ export default function AddUser() {
         <section className="flex flex-col h-[100vh]">
             <NavSection title={"Add User"} showAddButton={false} />
             <div className="bg-[#fafcff] grow flex items-center justify-center px-5">
-                <Form className="w-[800px] px-[30px] py-[50px] border rounded-md bg-white relative before:absolute before:w-full md:before:w-[34.7%] before:h-full before:bg-blue-400 before:top-0 before:left-0 before:rounded-s-md flex flex-col gap-[20px]">
+                <form className="w-[800px] px-[30px] py-[50px] border rounded-md bg-white relative before:absolute before:w-full md:before:w-[34.7%] before:h-full before:bg-blue-400 before:top-0 before:left-0 before:rounded-s-md flex flex-col gap-[20px]">
                     <div className="grid grid-cols-1 md:grid-cols-3 relative">
                         <div className="col-span-1 flex items-center justify-start md:px-[20px] py-[5px] bg-blue-400 md:bg-white rounded-md me-0 md:me-[30px]">
                             <h3 className="text-white md:text-blue-400 font-[500]">Full Name</h3>
@@ -88,7 +87,7 @@ export default function AddUser() {
                     <div className="mt-[3rem] relative flex w-full justify-center md:justify-end">
                         <button onClick={handleAddUser} className="bg-white md:bg-blue-400 px-[10px] py-[10px] w-[200px] text-blue-400 md:text-white rounded-md font-bold text-center uppercase text-[0.9rem] transition-all duration-300 md:hover:bg-blue-500 self-end">Add User</button>
                     </div>
-                </Form>
+                </form>
             </div>
         </section>
     )

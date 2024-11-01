@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function BlogSection() {
     return (
         <section className='pb-[4rem]'>
@@ -9,8 +7,8 @@ export default function BlogSection() {
                     <div className="space-y-[1rem]">
                         <img src="../src/assets/img/blog/blog-1.jpg" alt="" className='w-full bg-cover'/>
                         <ul className='text-[#B2B2B2] flex flex-row gap-[20px]'>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
+                            <li><i className="fa fa-calendar-o"></i> May 4,2019</li>
+                            <li><i className="fa fa-comment-o"></i> 5</li>
                         </ul>
                         <h5 className='font-[800] text-[1.2rem]'><a href="#">Cooking tips make cooking simple</a></h5>
                         <p className='text-[#6F6F6F]'>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -18,8 +16,8 @@ export default function BlogSection() {
                     <div className="space-y-[1rem]">
                         <img src="../src/assets/img/blog/blog-2.jpg" alt="" className='w-full bg-cover' />
                         <ul className='text-[#B2B2B2] flex flex-row gap-[20px]'>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
+                            <li><i className="fa fa-calendar-o"></i> May 4,2019</li>
+                            <li><i className="fa fa-comment-o"></i> 5</li>
                         </ul>
                         <h5 className='font-[800] text-[1.2rem]'><a href="#">6 ways to prepare breakfast for 30</a></h5>
                         <p className='text-[#6F6F6F]'>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -27,8 +25,8 @@ export default function BlogSection() {
                     <div className="space-y-[1rem]">
                         <img src="../src/assets/img/blog/blog-3.jpg" alt="" className='w-full bg-cover' />
                         <ul className='text-[#B2B2B2] flex flex-row gap-[20px]'>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
+                            <li><i className="fa fa-calendar-o"></i> May 4,2019</li>
+                            <li><i className="fa fa-comment-o"></i> 5</li>
                         </ul>
                         <h5 className='font-[800] text-[1.2rem]'><a href="#">Visit the clean farm in the US</a></h5>
                         <p className='text-[#6F6F6F]'>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>

@@ -12,7 +12,7 @@ export default function FeaturedSection() {
                     <ul className="flex flex-row flex-wrap items-center justify-center gap-[20px] cursor-pointer text-[1.1rem]">
                         {
                             featuredProducts.map((product, index) =>
-                                <li key={index} className={(tab == index) ? 'border-b-[2px] border-[#7FAD39]' : 'border-b-[2px] border-transparent'} onClick={(e) => {
+                                <li key={index} className={(tab == index) ? 'border-b-[2px] border-[#7FAD39]' : 'border-b-[2px] Oborder-transparent'} onClick={(e) => {
                                     e.preventDefault()
                                     setTab(index)
                                 }}>{product}</li>
