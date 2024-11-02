@@ -5,7 +5,7 @@ function App() {
 
     return (
         <>
-            <NavSection />
+            <NavSection showAddButton={true} />
         </>
     )
 }
