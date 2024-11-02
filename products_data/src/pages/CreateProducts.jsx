@@ -60,9 +60,9 @@ export default function CreateProducts() {
     }
 
     return (
-        <section className="flex flex-col">
+        <section>
             <NavSection showAddButton={false} />
-            <div className="bg-[#fafcff] grow flex items-center justify-center px-5 py-[5rem]">
+            <div className="flex items-center justify-center px-5 pt-[calc(10vh+4rem)] pb-[4rem]">
                 <Form className="w-[800px] px-[30px] py-[50px] border rounded-md bg-white relative before:absolute before:w-full md:before:w-[34.7%] before:h-full before:bg-green-400 before:top-0 before:left-0 before:rounded-s-md flex flex-col gap-[20px]">
                     <div className="grid grid-cols-1 md:grid-cols-3 relative">
                         <div className="col-span-1 flex items-center justify-start md:px-[20px] py-[5px] bg-green-400 md:bg-white rounded-md me-0 md:me-[30px]">
