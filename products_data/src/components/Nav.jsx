@@ -7,7 +7,7 @@ export default function NavSection({ showAddButton }) {
                     <h1 className="text-white uppercase font-bold text-[1.05rem]">Products Data</h1>
                     <div className="space-x-[2rem]">
                         <a href={`/`} className="text-white font-[600]">Home</a>
-                        <a href={`/create_products`} className={(showAddButton) ? "bg-white px-[10px] py-[5px] rounded-md font-[600] text-[0.9rem]" : "hidden"}>Add User</a>
+                        <a href={`/create_products/id`} className={(showAddButton) ? "bg-white px-[10px] py-[5px] rounded-md font-[600] text-[0.9rem]" : "hidden"}>Add User</a>
                     </div>
 
                 </div>

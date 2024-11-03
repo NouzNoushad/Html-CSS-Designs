@@ -1,14 +1,18 @@
-import { Form } from "react-router-dom";
+import { Form, useNavigate, useParams } from "react-router-dom";
 import NavSection from "../components/Nav";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 export default function CreateProducts() {
+    const { productId } = useParams()
+    const navigation = useNavigate()
     const [name, setName] = useState("")
     const [brand, setBrand] = useState("")
     const [price, setPrice] = useState(0.0)
     const [description, setDescription] = useState("")
     const [file, setFile] = useState(null)
+    const [fileName, setFileName] = useState("")
+    const [filePath, setFilePath] = useState("")
 
     const inputRef = useRef(null)
 
@@ -22,8 +26,9 @@ export default function CreateProducts() {
         const files = e.target.files
         if (!files) return
         const file = files[0]
-        console.log(file.name);
+        console.log(file);
         setFile(file)
+        setFileName(file.name)
     }
 
     const addProductData = () => {
@@ -43,14 +48,41 @@ export default function CreateProducts() {
             }
         }).then((response) => {
             console.log(response);
+            navigation('/')
+        }).catch((error) => {
+            console.log(error)
+        })
+    }
+
+    const updateProductData = () => {
+        const formData = new FormData()
+        formData.append("name", name);
+        formData.append("brand", brand);
+        formData.append("price", price);
+        formData.append("description", description);
+        formData.append("image", file);
+
+        const url = `http://localhost:3000/update_product/${productId}`;
+
+        axios.post(url, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }).then((response) => {
+            console.log(response);
+            navigation('/')
         }).catch((error) => {
             console.log(error)
         })
     }
 
     const handleAddProducts = () => {
-        // add user data
-        addProductData()
+        if (productId !== 'id') {
+            updateProductData()
+        } else {
+            addProductData()
+        }
+
         // reset form
         setFile(null)
         setName("")
@@ -58,6 +90,26 @@ export default function CreateProducts() {
         setPrice(0.0)
         setDescription("")
     }
+
+    useEffect(() => {
+        if (productId !== 'id') {
+            const url = `http://localhost:3000/get_product/${productId}`
+            axios.get(url).then((response) => {
+                console.log(response.data.product['name']);
+                const product = response.data.product
+                setName(product['name'])
+                setBrand(product['brand'])
+                setPrice(product['price'])
+                setDescription(product['description'])
+                setFilePath(product['image'])
+                const fileName = product['image'].split('/').pop()
+                console.log(fileName)
+                setFileName(fileName)
+            }).catch((error) => {
+                console.log(error)
+            })
+        }
+    }, [productId])
 
     return (
         <section>
@@ -101,15 +153,18 @@ export default function CreateProducts() {
                             <h3 className="text-white md:text-green-400 font-[500]">Image</h3>
                         </div>
                         <div className="col-span-2 ms-0 md:ms-[30px]">
+                            <div className={filePath !== "" ? "h-[250px]" : "hidden"}>
+                                <img src={filePath} alt="" className="h-full" />
+                            </div>
                             <div className="border rounded-md w-full flex flex-col sm:flex-row bg-white" >
-                                <h1 className="grow py-[10px] px-[10px] text-gray-400 text-[1rem]">{file != null ? file.name : 'Upload product image'}</h1>
+                                <h1 className="grow py-[10px] px-[10px] text-gray-400 text-[1rem]">{fileName !== "" ? fileName : 'Upload product image'}</h1>
                                 <input type="file" hidden onChange={handleFileUpload} ref={inputRef} />
                                 <button onClick={handleClick} className="border border-green-400 text-green-400 w-[200px] my-[3px] rounded-md uppercase font-[600] text-[0.9rem] transition-all duration-300 hover:text-white hover:bg-green-400 py-[10px] sm:py-0 mx-auto sm:mx-1">Upload</button>
                             </div>
                         </div>
                     </div>
                     <div className="mt-[3rem] relative flex w-full justify-center md:justify-end">
-                        <button onClick={handleAddProducts} className="bg-white md:bg-green-400 px-[10px] py-[10px] w-[200px] text-green-400 md:text-white rounded-md font-bold text-center uppercase text-[0.9rem] transition-all duration-300 md:hover:bg-green-500 self-end">Add Product</button>
+                        <button onClick={handleAddProducts} className="bg-white md:bg-green-400 px-[10px] py-[10px] w-[200px] text-green-400 md:text-white rounded-md font-bold text-center uppercase text-[0.9rem] transition-all duration-300 md:hover:bg-green-500 self-end">{productId !== 'id' ? "Update Product" : "Add Product"}</button>
                     </div>
                 </Form>
             </div>

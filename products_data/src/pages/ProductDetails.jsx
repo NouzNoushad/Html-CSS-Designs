@@ -42,8 +42,8 @@ export default function ProductDetails() {
                                 <p className="text-[1.3rem] font-[500]">${product['price']}</p>
                             </div>
                             <p className="py-3">{product['description']}</p>
-                            <div className="flex flex-row items-center md:justify-end juc gap-[5px] pt-5">
-                                <button className="rounded-md px-[40px] py-[5px] border-2 text-blue-400 border-blue-400 transition-all duration-300 hover:bg-blue-400 hover:border-blue-400 hover:text-white">Edit</button>
+                            <div className="flex flex-row items-center md:justify-end justify-center gap-[5px] pt-5">
+                                <a href={`/create_products/${product['_id']}`} className="rounded-md px-[40px] py-[5px] border-2 text-blue-400 border-blue-400 transition-all duration-300 hover:bg-blue-400 hover:border-blue-400 hover:text-white">Edit</a>
                                 <button onClick={handleProductDelete} className="rounded-md px-[40px] py-[5px] border-2 text-red-400 border-red-400 transition-all duration-300 hover:bg-red-400 hover:border-red-400 hover:text-white">Delete</button>
                             </div>
                         </div>
