@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 
 export default function ProductsSection() {
-    const [ products, setProducts ] = useState([])
+    const [products, setProducts] = useState([])
 
     useEffect(() => {
         const url = "http://localhost:3000/get_products"
@@ -19,9 +19,9 @@ export default function ProductsSection() {
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]">
                     {
                         products.map((product, index) =>
-                            <div key={index} className="bg-white rounded-md px-[20px] pt-[20px] pb-[10px] border">
+                            <a href={`/product_details/${product['_id']}`} key={index} className="bg-white rounded-md px-[20px] pt-[20px] pb-[10px] border">
                                 <div className="h-[250px] w-full bg-gray-300 rounded-md">
-                                    <img src={product['image']} alt="" className="h-full w-full bg-contain"/>
+                                    <img src={product['image']} alt="" className="h-full w-full bg-contain" />
                                 </div>
                                 <div className="py-[15px] flex flex-row items-end justify-between">
                                     <div className="space-y-1">
@@ -30,7 +30,7 @@ export default function ProductsSection() {
                                     </div>
                                     <p className="font-[500] text-[1.2rem]">$500</p>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
                 </div>

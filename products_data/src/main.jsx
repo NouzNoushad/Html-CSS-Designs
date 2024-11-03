@@ -8,6 +8,7 @@ import {
 import App from './App.jsx'
 import PageNotFound from './pages/PageNotFound.jsx';
 import CreateProducts from './pages/CreateProducts.jsx';
+import ProductDetails from './pages/ProductDetails.jsx';
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
         path: "/create_products",
         element: <CreateProducts />,
+    },
+    {
+        path: "/product_details/:productId",
+        element: <ProductDetails />,
     },
 ]);
 
