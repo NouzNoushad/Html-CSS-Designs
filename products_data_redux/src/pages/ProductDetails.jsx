@@ -1,20 +1,22 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import NavSection from "../components/Nav";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getProductDetails } from "../redux/ProductDetailsSlice";
 
 export default function ProductDetails() {
-    const [product, setProduct] = useState(null)
     const { productId } = useParams()
     const navigate = useNavigate()
+
+    let dispatch = useDispatch()
+
+    const { loading, product, error } = useSelector((state) => state.product['product'])
+
     useEffect(() => {
-        const url = `http://localhost:3000/get_product/${productId}`
-        axios.get(url).then((response) => {
-            console.log(response.data.product['name']);
-            setProduct(response.data.product)
-        }).catch((error) => {
-            console.log(error)
-        })
+        dispatch(getProductDetails(productId))
     }, [productId])
 
     const handleProductDelete = () => {
@@ -26,6 +28,7 @@ export default function ProductDetails() {
     }
     return (
         <div>
+            {console.log(product)}
             <NavSection showAddButton={false} />
             {
                 product != null ? <div className="pb-[4rem] pt-[calc(10vh+4rem)] max-w-[600px] mx-auto px-5 xl:px-0">

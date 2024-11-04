@@ -6,7 +6,7 @@ import { getProducts } from "../redux/ProductSlice"
 
 export default function ProductsSection() {
     let dispatch = useDispatch()
-    const { loading, products, error } = useSelector((state) => state.products)
+    const { loading, products, error } = useSelector((state) => state.products['products'])
 
     useEffect(() => {
         dispatch(getProducts())
@@ -16,7 +16,7 @@ export default function ProductsSection() {
             <div className="max-w-[1200px] mx-auto px-5 xl:px-0">
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]">
                     {
-                        products['products'] ? products['products'].map((product, index) =>
+                        products ? products.map((product, index) =>
                             <a href={`/product_details/${product['_id']}`} key={index} className="bg-white rounded-md px-[20px] pt-[20px] pb-[10px] border">
                                 <div className="h-[250px] w-full bg-gray-300 rounded-md">
                                     <img src={product['image']} alt="" className="h-full w-full bg-contain" />
