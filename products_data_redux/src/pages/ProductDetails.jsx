@@ -6,6 +6,7 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductDetails } from "../redux/ProductDetailsSlice";
+import { deleteProductDetails } from "../redux/ProductDeleteSlice";
 
 export default function ProductDetails() {
     const { productId } = useParams()
@@ -20,15 +21,11 @@ export default function ProductDetails() {
     }, [productId])
 
     const handleProductDelete = () => {
-        const url = `http://localhost:3000/delete_product/${productId}`;
-        axios.delete(url).then((response) => {
-            console.log(response.data)
-            navigate('/')
-        }).catch((error) => console.log(error))
+        dispatch(deleteProductDetails(productId))
+        navigate('/')
     }
     return (
         <div>
-            {console.log(product)}
             <NavSection showAddButton={false} />
             {
                 product != null ? <div className="pb-[4rem] pt-[calc(10vh+4rem)] max-w-[600px] mx-auto px-5 xl:px-0">
