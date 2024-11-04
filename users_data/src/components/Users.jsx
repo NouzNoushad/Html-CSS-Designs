@@ -23,7 +23,7 @@ export default function Users() {
                         users.map((user, index) =>
                             <div key={index} className="bg-white flex flex-col items-center px-[15px] py-[25px] rounded-md">
                                 <div className="h-[200px] w-full rounded-md bg-gray-50">
-                                    <img src={user["image"]} alt="" className="w-full h-full object-contain"/>
+                                    <img src={user["image"]} alt="" className="w-full h-full object-contain" />
                                 </div>
                                 <h2 className="pt-5 text-[1.1rem] font-[500]">{user["name"]}</h2>
                                 <h3 className="text-gray-400 pt-2">{user["email"]}</h3>
