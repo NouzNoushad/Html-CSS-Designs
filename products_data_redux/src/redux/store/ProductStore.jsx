@@ -3,6 +3,7 @@ import productsSlice from "../slice/ProductSlice"
 import productDetailsSlice from "../slice/ProductDetailsSlice"
 import productDeleteSlice from "../slice/ProductDeleteSlice"
 import createProductSlice from "../slice/AddProductSlice"
+import productUpdateSlice from "../slice/UpdateProductSlice"
 
 export const store = configureStore({
     reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
         product: productDetailsSlice,
         deleteProduct: productDeleteSlice,
         createProduct: createProductSlice,
+        updateProduct: productUpdateSlice,
     },
 })

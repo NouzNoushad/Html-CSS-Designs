@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Form, useNavigate, useParams } from "react-router-dom";
 import NavSection from "../components/Nav";
 import { useEffect, useRef, useState } from "react";
-import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { createNewProduct } from "../redux/slice/AddProductSlice";
+import { updateProductDetails } from "../redux/slice/UpdateProductSlice";
+import { getProductDetails } from "../redux/slice/ProductDetailsSlice";
 
 export default function CreateProducts() {
     const { productId } = useParams()
@@ -18,9 +19,6 @@ export default function CreateProducts() {
     const [file, setFile] = useState(null)
     const [fileName, setFileName] = useState("")
     const [filePath, setFilePath] = useState("")
-
-    const { loading, result, error } = useSelector((state) => state.createProduct)
-
     const inputRef = useRef(null)
 
     const handleClick = (e) => {
@@ -36,6 +34,7 @@ export default function CreateProducts() {
         console.log(file);
         setFile(file)
         setFileName(file.name)
+        setFilePath("")
     }
 
     const addProductData = () => {
@@ -52,24 +51,16 @@ export default function CreateProducts() {
     }
 
     const updateProductData = () => {
-        const formData = new FormData()
-        formData.append("name", name);
-        formData.append("brand", brand);
-        formData.append("price", price);
-        formData.append("description", description);
-        formData.append("image", file);
-
-        const url = `http://localhost:3000/update_product/${productId}`;
-
-        axios.post(url, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        }).then((response) => {
-            console.log(response);
+        const updateProduct = {
+            id: productId,
+            name,
+            brand,
+            price,
+            description,
+            file
+        }
+        dispatch(updateProductDetails(updateProduct)).then(() => {
             navigation('/')
-        }).catch((error) => {
-            console.log(error)
         })
     }
 
@@ -90,10 +81,9 @@ export default function CreateProducts() {
 
     useEffect(() => {
         if (productId !== 'id') {
-            const url = `http://localhost:3000/get_product/${productId}`
-            axios.get(url).then((response) => {
-                console.log(response.data.product['name']);
-                const product = response.data.product
+            dispatch(getProductDetails(productId)).unwrap().then((savedProduct) => {
+                console.log(savedProduct.product)
+                const product = savedProduct.product
                 setName(product['name'])
                 setBrand(product['brand'])
                 setPrice(product['price'])
@@ -102,17 +92,12 @@ export default function CreateProducts() {
                 const fileName = product['image'].split('/').pop()
                 console.log(fileName)
                 setFileName(fileName)
-            }).catch((error) => {
-                console.log(error)
             })
         }
     }, [productId])
 
     return (
         <section>
-            {
-                console.log(`create result: ${result}`)
-            }
             <NavSection showAddButton={false} />
             <div className="flex items-center justify-center px-5 pt-[calc(10vh+4rem)] pb-[4rem]">
                 <Form className="w-[800px] px-[30px] py-[50px] border rounded-md bg-white relative before:absolute before:w-full md:before:w-[34.7%] before:h-full before:bg-green-400 before:top-0 before:left-0 before:rounded-s-md flex flex-col gap-[20px]">
@@ -153,11 +138,11 @@ export default function CreateProducts() {
                             <h3 className="text-white md:text-green-400 font-[500]">Image</h3>
                         </div>
                         <div className="col-span-2 ms-0 md:ms-[30px]">
-                            <div className={filePath !== "" ? "h-[250px]" : "hidden"}>
+                            <div className={filePath !== "" ? "h-[250px] mb-2" : "hidden"}>
                                 <img src={filePath} alt="" className="h-full" />
                             </div>
                             <div className="border rounded-md w-full flex flex-col sm:flex-row bg-white" >
-                                <h1 className="grow py-[10px] px-[10px] text-gray-400 text-[1rem]">{fileName !== "" ? fileName : 'Upload product image'}</h1>
+                                <h1 className="grow text-ellipsis py-[10px] px-[10px] text-gray-400 text-[1rem]">{fileName !== "" ? fileName : 'Upload product image'}</h1>
                                 <input type="file" hidden onChange={handleFileUpload} ref={inputRef} />
                                 <button onClick={handleClick} className="border border-green-400 text-green-400 w-[200px] my-[3px] rounded-md uppercase font-[600] text-[0.9rem] transition-all duration-300 hover:text-white hover:bg-green-400 py-[10px] sm:py-0 mx-auto sm:mx-1">Upload</button>
                             </div>
