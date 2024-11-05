@@ -1,11 +1,16 @@
+/* eslint-disable no-unused-vars */
 import { Form, useNavigate, useParams } from "react-router-dom";
 import NavSection from "../components/Nav";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { createNewProduct } from "../redux/slice/AddProductSlice";
 
 export default function CreateProducts() {
     const { productId } = useParams()
     const navigation = useNavigate()
+    const dispatch = useDispatch()
+
     const [name, setName] = useState("")
     const [brand, setBrand] = useState("")
     const [price, setPrice] = useState(0.0)
@@ -13,6 +18,8 @@ export default function CreateProducts() {
     const [file, setFile] = useState(null)
     const [fileName, setFileName] = useState("")
     const [filePath, setFilePath] = useState("")
+
+    const { loading, result, error } = useSelector((state) => state.createProduct)
 
     const inputRef = useRef(null)
 
@@ -32,25 +39,15 @@ export default function CreateProducts() {
     }
 
     const addProductData = () => {
-        console.log(`name: ${name}, brand: ${brand}, price: ${price}, description: ${description} image: ${file.name}`)
-        const formData = new FormData()
-        formData.append("name", name);
-        formData.append("brand", brand);
-        formData.append("price", price);
-        formData.append("description", description);
-        formData.append("image", file);
-
-        const url = "http://localhost:3000/create_products";
-
-        axios.post(url, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        }).then((response) => {
-            console.log(response);
+        const product = {
+            name,
+            brand,
+            price,
+            description,
+            file
+        }
+        dispatch(createNewProduct(product)).then(() => {
             navigation('/')
-        }).catch((error) => {
-            console.log(error)
         })
     }
 
@@ -113,6 +110,9 @@ export default function CreateProducts() {
 
     return (
         <section>
+            {
+                console.log(`create result: ${result}`)
+            }
             <NavSection showAddButton={false} />
             <div className="flex items-center justify-center px-5 pt-[calc(10vh+4rem)] pb-[4rem]">
                 <Form className="w-[800px] px-[30px] py-[50px] border rounded-md bg-white relative before:absolute before:w-full md:before:w-[34.7%] before:h-full before:bg-green-400 before:top-0 before:left-0 before:rounded-s-md flex flex-col gap-[20px]">
@@ -164,7 +164,7 @@ export default function CreateProducts() {
                         </div>
                     </div>
                     <div className="mt-[3rem] relative flex w-full justify-center md:justify-end">
-                        <button onClick={handleAddProducts} className="bg-white md:bg-green-400 px-[10px] py-[10px] w-[200px] text-green-400 md:text-white rounded-md font-bold text-center uppercase text-[0.9rem] transition-all duration-300 md:hover:bg-green-500 self-end">{productId !== 'id' ? "Update Product" : "Add Product"}</button>
+                        <button type="submit" onClick={handleAddProducts} className="bg-white md:bg-green-400 px-[10px] py-[10px] w-[200px] text-green-400 md:text-white rounded-md font-bold text-center uppercase text-[0.9rem] transition-all duration-300 md:hover:bg-green-500 self-end">{productId !== 'id' ? "Update Product" : "Add Product"}</button>
                     </div>
                 </Form>
             </div>

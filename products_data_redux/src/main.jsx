@@ -9,7 +9,7 @@ import App from './App.jsx'
 import PageNotFound from './pages/PageNotFound.jsx';
 import CreateProducts from './pages/CreateProducts.jsx';
 import ProductDetails from './pages/ProductDetails.jsx';
-import { store } from "./redux/ProductStore"
+import { store } from "./redux/store/ProductStore.jsx"
 import { Provider } from 'react-redux'
 
 const router = createBrowserRouter([

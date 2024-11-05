@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { getProducts } from "../redux/ProductSlice"
+import { getProducts } from "../redux/slice/ProductSlice"
 
 export default function ProductsSection() {
     let dispatch = useDispatch()
@@ -26,7 +26,7 @@ export default function ProductsSection() {
                                         <h2 className="font-[500] text-[1.1rem]">{product['name']}</h2>
                                         <h3 className="text-[0.9rem]">{product['brand']}</h3>
                                     </div>
-                                    <p className="font-[500] text-[1.2rem]">$500</p>
+                                    <p className="font-[500] text-[1.2rem]">${product['price']}</p>
                                 </div>
                             </a>
                         ) : null

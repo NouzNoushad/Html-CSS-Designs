@@ -1,12 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import NavSection from "../components/Nav";
-import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getProductDetails } from "../redux/ProductDetailsSlice";
-import { deleteProductDetails } from "../redux/ProductDeleteSlice";
+import { getProductDetails } from "../redux/slice/ProductDetailsSlice";
+import { deleteProductDetails } from "../redux/slice/ProductDeleteSlice";
 
 export default function ProductDetails() {
     const { productId } = useParams()
